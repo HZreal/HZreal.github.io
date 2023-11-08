@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 ">
+    <meta name="generator" content="Hugo 0.118.2">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="" />
+<meta property="og:description" content="用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/" /><meta property="article:section" content="posts" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 ">
+
+<meta itemprop="wordCount" content="14">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 "/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="用户密码方式验证登入过程分析">用户密码方式验证登入过程分析</h2>
+<ol>
+<li>客户端ssh向服务器发送连接请求，传递用户名及ip端口</li>
+<li>服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端</li>
+<li>若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。</li>
+<li>客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。</li>
+</ol>
+<h2 id="公钥身份验证登入过程分析">公钥身份验证登入过程分析</h2>
+<ol>
+<li>客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 <strong>~/.ssh/authorized_keys</strong> 文件中</li>
+<li>客户端ssh向服务器发送连接请求</li>
+<li>服务端检查用户名存在后，生成一个随机串返给客户端</li>
+<li>客户端自己的私钥对随机串进行签名并发送给服务器</li>
+<li>服务器使用已存入<strong>authorized_keys</strong> 中的公钥进行验签，若验签通过则客户端身份认证成功</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://example.org/" >
+    &copy;  My New Hugo Site 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
