@@ -2,120 +2,120 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.angularcorp.com/zh/environment/</loc>
+    <loc>https://hzreal.github.io/zh/environment/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/go/go-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B9%8B-wire-%E5%BA%93/</loc>
+    <loc>https://hzreal.github.io/zh/go/go-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B9%8B-wire-%E5%BA%93/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/search/</loc>
+    <loc>https://hzreal.github.io/zh/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/search/"
+                href="https://hzreal.github.io/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/search/"
+                href="https://hzreal.github.io/zh/search/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/cache/</loc>
+    <loc>https://hzreal.github.io/zh/tech/cache/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/centos7/</loc>
+    <loc>https://hzreal.github.io/zh/tech/centos7/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/clickhouse/</loc>
+    <loc>https://hzreal.github.io/zh/tech/clickhouse/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/gis/</loc>
+    <loc>https://hzreal.github.io/zh/tech/gis/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/github/</loc>
+    <loc>https://hzreal.github.io/zh/tech/github/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
+    <loc>https://hzreal.github.io/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/http/</loc>
+    <loc>https://hzreal.github.io/zh/tech/http/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/notebook/</loc>
+    <loc>https://hzreal.github.io/zh/tech/notebook/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/pm2/</loc>
+    <loc>https://hzreal.github.io/zh/tech/pm2/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/postgis/</loc>
+    <loc>https://hzreal.github.io/zh/tech/postgis/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/postgresql/</loc>
+    <loc>https://hzreal.github.io/zh/tech/postgresql/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</loc>
+    <loc>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
+                href="https://hzreal.github.io/en/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
+                href="https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</loc>
+    <loc>https://hzreal.github.io/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/discuzq/</loc>
+    <loc>https://hzreal.github.io/zh/tool/discuzq/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/docsify/</loc>
+    <loc>https://hzreal.github.io/zh/tool/docsify/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/git-commits-specification/</loc>
+    <loc>https://hzreal.github.io/zh/tool/git-commits-specification/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
+    <loc>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/hexo/</loc>
+    <loc>https://hzreal.github.io/zh/tool/hexo/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/</loc>
+    <loc>https://hzreal.github.io/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/"
+                href="https://hzreal.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/"
+                href="https://hzreal.github.io/zh/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/categories/</loc>
+    <loc>https://hzreal.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/categories/"
+                href="https://hzreal.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/categories/"
+                href="https://hzreal.github.io/zh/categories/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/go/</loc>
+    <loc>https://hzreal.github.io/zh/go/</loc>
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tags/</loc>
+    <loc>https://hzreal.github.io/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/tags/"
+                href="https://hzreal.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/tags/"
+                href="https://hzreal.github.io/zh/tags/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tech/</loc>
+    <loc>https://hzreal.github.io/zh/tech/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.angularcorp.com/en/tech/"
+                href="https://hzreal.github.io/en/tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://www.angularcorp.com/zh/tech/"
+                href="https://hzreal.github.io/zh/tech/"
                 />
   </url><url>
-    <loc>https://www.angularcorp.com/zh/tool/</loc>
+    <loc>https://hzreal.github.io/zh/tool/</loc>
   </url>
 </urlset>

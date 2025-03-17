@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teches on {码途轨迹} - 发现问题，分享解决.</title>
-    <link>https://www.angularcorp.com/zh/tech/</link>
+    <link>https://hzreal.github.io/zh/tech/</link>
     <description>Recent content in Teches on {码途轨迹} - 发现问题，分享解决.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://www.angularcorp.com/zh/tech/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://hzreal.github.io/zh/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/cache/</link>
+      <link>https://hzreal.github.io/zh/tech/cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/cache/</guid>
+      <guid>https://hzreal.github.io/zh/tech/cache/</guid>
       <description>缓存 简介 简而言之，即是数据存储的缓冲区。使用缓存之后，可以减轻访问数据库的压力，显著的提升系统的性能。
 使用缓存的一般流程如下：
 缓存通常有两种：
@@ -37,10 +37,10 @@ PS：说明了边界安全的重要性。应该做好参数检验，外界不可
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/centos7/</link>
+      <link>https://hzreal.github.io/zh/tech/centos7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/centos7/</guid>
+      <guid>https://hzreal.github.io/zh/tech/centos7/</guid>
       <description>centOS7 安装yum 查看端口 netstat -anp |grep 80
 安装wget yum install wget
 systemctl的所有service配置文件目录为/usr/lib/systemd/system
@@ -51,10 +51,10 @@ top 命令实时查看CPU内存
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/clickhouse/</link>
+      <link>https://hzreal.github.io/zh/tech/clickhouse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/clickhouse/</guid>
+      <guid>https://hzreal.github.io/zh/tech/clickhouse/</guid>
       <description>clickhouse 安装搭建 server配置 路径 /etc/clickhouse-server
 用户配置
 user.xml user.d/ server配置
@@ -65,10 +65,10 @@ config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;nda
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/gis/</link>
+      <link>https://hzreal.github.io/zh/tech/gis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/gis/</guid>
+      <guid>https://hzreal.github.io/zh/tech/gis/</guid>
       <description>Gis 空间数据 空间数据基本特征 空间特征
 空间实体的位置或现在所处的地理位置及拓扑关系和几何特征
 属性特征
@@ -85,10 +85,10 @@ config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;nda
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/github/</link>
+      <link>https://hzreal.github.io/zh/tech/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/github/</guid>
+      <guid>https://hzreal.github.io/zh/tech/github/</guid>
       <description>Github github官方文档
 https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
 操作技巧 按s 快速定位到搜索栏 按t 将项目目录树以列全部呈现 按. 将项目在在线vscode中查看 搜索技巧 搜索仓库https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
@@ -103,10 +103,10 @@ https://github.com/trending
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
+      <link>https://hzreal.github.io/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
+      <guid>https://hzreal.github.io/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
       <description>gRPC 四种模式及应用场景 在 gRPC 中，RPC 调用模式有四种，每种模式适用于不同的业务场景。下面将详细分析这四种模式及其对应的应用场景。
 参考官方文档概念：https://grpc.io/docs/what-is-grpc/core-concepts
 1. 简单 RPC (Unary RPC) 模式描述 客户端发送一个请求，服务端返回一个响应。双方的通信都是一次性的。
@@ -124,10 +124,10 @@ https://github.com/trending
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/http/</link>
+      <link>https://hzreal.github.io/zh/tech/http/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/http/</guid>
+      <guid>https://hzreal.github.io/zh/tech/http/</guid>
       <description>Http jsonp 概念：浏览器通过script标签中src属性向服务端发送执行函数的名字，服务端根据函数名、服务端数据，拼接成一个函数调用的字符串给客户端script标签执行，这称之为JSONP
 特点：
 不属于axios请求，因为没有使用XMLHttpRequest对象 仅支持get请求，不支持post、put、delete </description>
@@ -135,19 +135,19 @@ https://github.com/trending
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/notebook/</link>
+      <link>https://hzreal.github.io/zh/tech/notebook/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/notebook/</guid>
+      <guid>https://hzreal.github.io/zh/tech/notebook/</guid>
       <description>notebook win10计算文件Hash certutil -hashfile 文件名 md5 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/pm2/</link>
+      <link>https://hzreal.github.io/zh/tech/pm2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/pm2/</guid>
+      <guid>https://hzreal.github.io/zh/tech/pm2/</guid>
       <description>PM2 参考：https://mp.weixin.qq.com/s/S8Gw2XzuflnN2QMSVXhLhg
 场景 node 应用跑的时候突然抛了个错，崩溃了，是不是需要重新跑起来？这时候是不是就需要另一个进程来自动做重启这件事情？ node 应用的日志默认输出在控制台，如果想输出到不同的日志文件，是不是可以让另一个进程获取 node 应用的输出，然后写文件来实现？ node 是单线程的，而机器是多个 cpu 的，为了充分利用 cpu 的能力，我们会用多个进程来跑 node 应用，来提高性能。这种通用逻辑是不是也可以放到一个单独进程里来实现？ node 运行时的 cpu、内存等资源的占用，是不是需要监控？这时候是不是可以让另一个进程来做？ 线上的 node 应用不只是跑起来就行了，还要做自动重启、日志、多进程、监控这些事情。
 简介 pm2 是 process manager，进程管理，它是第二个大版本，和前一个版本差异很大，所以叫 pm2.
@@ -159,10 +159,10 @@ pm2 start app.js -i max 根据CPU核数启动进程的个数
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/postgis/</link>
+      <link>https://hzreal.github.io/zh/tech/postgis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/postgis/</guid>
+      <guid>https://hzreal.github.io/zh/tech/postgis/</guid>
       <description>postgis 安装扩展 先查找最新postgis插件版本号
 sudo apt-cache search postgis 找到当前已安装postgreSQL版本对应的postgis版本
 ps:查看postgreSQL版本 select version()
@@ -173,10 +173,10 @@ CREATE EXTENSION postgis_topology; pgrouting 提供了对路网的分析支持�
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/postgresql/</link>
+      <link>https://hzreal.github.io/zh/tech/postgresql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/postgresql/</guid>
+      <guid>https://hzreal.github.io/zh/tech/postgresql/</guid>
       <description>postgreSQL 安装搭建 https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/
 指定版本安装
 sudo apt-get install postgresql-13 配置 路径 ubuntu下：
@@ -195,28 +195,28 @@ psql -h 192.168.1.7 -p 5432 -U postgres -d testdb -W 密码 基本操作 数据�
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</link>
+      <link>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</guid>
+      <guid>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</guid>
       <description>用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</link>
+      <link>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</guid>
       <description>ubuntu20.04安装部分软件 安装docker 1、卸载可能存在的或者为安装成功的Docker版本 sudo apt-``get` `remove docker docker-engine docker-ce docker.io 2、添加阿里云的GPG密钥 curl -fsSL http:``//mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 3、使用以下命令设置存储库 sudo add-apt-repository ``&amp;#34;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&amp;#34; 4、安装最新版本的Docker sudo apt-``get` `update sudo apt-``get` `install docker-ce docker-ce-cli containerd.io docker-compose-plugin 5、验证Docker是否安装成功 -- 查看docker 版本docker version 二、安装postgresql 1、Add Postgre SQL 13 repository sudo apt updatesudo apt install curl gpg gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates add the APT repository，importing GPG key curl -fsSL https://www.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</link>
+      <link>https://hzreal.github.io/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</guid>
+      <guid>https://hzreal.github.io/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</guid>
       <description>控制反转 IoC 与依赖注入 DI 引入 讨论之前，先来简述一下软件对象中的耦合
 在软件开发过程中，对象之间的耦合关系是一个常见的问题。传统的面向对象设计中，对象之间的依赖通常是硬编码在代码中的，这导致了代码的高耦合度和低灵活性。当一个对象依赖于另一个对象时，它通常会直接实例化或调用该对象，这使得两个对象之间的关系非常紧密，难以进行单元测试和代码重用。
 例如，考虑一个电商网站的购物车功能。在购物车中直接实例化商品对象可能会导致购物车模块与商品模块之间的紧密耦合，使得如果需要修改商品类的实现或者替换为其他商品类时，就必须要修改购物车模块的代码。这种紧耦合的设计不仅使代码难以维护和扩展，还降低了代码的可测试性和可重用性。

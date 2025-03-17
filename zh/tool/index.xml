@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on {码途轨迹} - 发现问题，分享解决.</title>
-    <link>https://www.angularcorp.com/zh/tool/</link>
+    <link>https://hzreal.github.io/zh/tool/</link>
     <description>Recent content in Tools on {码途轨迹} - 发现问题，分享解决.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://www.angularcorp.com/zh/tool/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://hzreal.github.io/zh/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tool/discuzq/</link>
+      <link>https://hzreal.github.io/zh/tool/discuzq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tool/discuzq/</guid>
+      <guid>https://hzreal.github.io/zh/tool/discuzq/</guid>
       <description>discuz!Q 简介 快速搭建个人社区
 doc： https://discuz.com/
 api： https://developer.discuz.chat/#/api/get:_api_v3_check.user.get.redpacket
@@ -27,10 +27,10 @@ https://ip:20443/admin/</description>
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tool/docsify/</link>
+      <link>https://hzreal.github.io/zh/tool/docsify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tool/docsify/</guid>
+      <guid>https://hzreal.github.io/zh/tool/docsify/</guid>
       <description>docsify https://docsify.js.org/#/
 安装
 npm i docsify-cli -g 搭建项目
@@ -40,10 +40,10 @@ docsify serve .\docs\ </description>
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tool/git-commits-specification/</link>
+      <link>https://hzreal.github.io/zh/tool/git-commits-specification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tool/git-commits-specification/</guid>
+      <guid>https://hzreal.github.io/zh/tool/git-commits-specification/</guid>
       <description>Conventional Commits：让您的Git历史更加清晰和有意义 引言 在软件开发中，良好的版本控制实践是维持项目健康和可持续发展的关键。一个清晰、一致的提交历史不仅可以加强团队合作，还能提高代码的可维护性。本文将介绍 Conventional Commits 规范，一种帮助您实现这一目标的提交信息格式规范。
 什么是 Conventional Commits？ Conventional Commits 是一个轻量级的、社区驱动的提交信息格式规范。它的核心目的是使提交信息更加可读和易于理解。遵循这一规范，可以让您的 Git 历史成为一个清晰的故事，而不仅仅是代码的变更记录。
 核心要点 清晰的类型定义：规定了一系列预定义的提交类型，如 feat, fix, docs, 等，每种类型对应不同的代码更改目的。 可选的范围：允许在提交类型后指定影响范围，增加了额外的上下文信息。 描述性的消息：鼓励编写简短且具有描述性的信息，概括提交的主要内容。 如何使用 Conventional Commits？ 使用 Conventional Commits 的基本格式如下：
@@ -53,10 +53,10 @@ Conventional Commits 的好处 提高可读性：清晰的提交历史使新团�
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</link>
+      <link>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</guid>
+      <guid>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</guid>
       <description>引言 在软件开发中，良好的版本控制实践是维持项目健康和可持续发展的关键。一个清晰、一致的提交历史不仅可以加强团队合作，还能提高代码的可维护性。本文将介绍 Conventional Commits 规范，一种帮助您实现这一目标的提交信息格式规范。
 什么是 Conventional Commits？ Conventional Commits 是一个轻量级的、社区驱动的提交信息格式规范。它的核心目的是使提交信息更加可读和易于理解。遵循这一规范，可以让您的 Git 历史成为一个清晰的故事，而不仅仅是代码的变更记录。
 可参考链接：https://www.conventionalcommits.org
@@ -67,10 +67,10 @@ Conventional Commits 的好处 提高可读性：清晰的提交历史使新团�
     
     <item>
       <title></title>
-      <link>https://www.angularcorp.com/zh/tool/hexo/</link>
+      <link>https://hzreal.github.io/zh/tool/hexo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.angularcorp.com/zh/tool/hexo/</guid>
+      <guid>https://hzreal.github.io/zh/tool/hexo/</guid>
       <description>Hexo framework based on node.js
 官网： https://hexo.io
 doc：https://hexo.io/docs/
