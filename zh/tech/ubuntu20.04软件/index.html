@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+    dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+    <title>
+    
+     - 极客科技
+    
+</title>
+    
+    
+    
+    
+    
+    
+    <meta name="keywords" content="SEO keywords">
+    <meta name="description" content="SEO description">
+    <link rel="canonical" href="https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/" />
+    <link rel="icon" href="/favicon.ico?v=1742227238" type="image/x-icon">
+    
+<link rel="stylesheet" href="/css/app.min.0a6aef139934fd51b94462b95d8d24c84248539ad057d6c32a7b20376b85062a.css" integrity="sha256-CmrvE5k0/VG5RGK5XY0kyEJIU5rQV9bDKnsgN2uFBio=" crossorigin="anonymous">
+    
+<script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
+
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-%2a%2a%2a%2a%2a%2a" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-******');
+    </script>
+    
+
+    
+    
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=&product=sticky-share-buttons"
+        async="async"></script>
+    
+</head><body>
+    <div class="
+        mx-auto max-w-[calc(120rem)]
+        min-h-screen
+        2xl:px-[calc(16rem)]
+        xl:px-24
+        md:px-8
+        px-4
+    ">
+
+        <div x-data="{ openMenu: false }" class="relative">
+    <nav class="flex flex-1 flex-col lg:flex-row items-center justify-between">
+        <a href="/">
+            <img src="/image/logo.webp?v=1742227238" alt="Logo"
+                class="w-16 h-16 my-5 p-1 bg-gray-100 rounded-full object-cover cursor-pointer hover:scale-110" />
+        </a>
+        <div class="hidden lg:block" :class="{'hidden': !openMenu}">
+            
+
+
+
+
+
+
+<ul
+    class="flex flex-col lg:flex-row justify-end mt-2 sm:mt-5 mb-5 pb-2 font-light text-xl lg:text-2xl gap-5 lg:gap-1 text-center">
+    
+
+
+
+
+
+
+
+
+<li>
+    <a    class="px-5 lg:px-10 py-3 font-light hover:border-b-2 hover:border-red-500"     href="/zh/"  >首页</a>
+    
+</li>
+
+
+
+
+
+
+
+<li>
+    <a    class="px-5 lg:px-10 py-3 font-light hover:border-b-2 hover:border-red-500"     href="/zh/categories/"  >文章分类</a>
+    
+</li>
+
+
+
+
+
+
+
+<li>
+    <a    class="px-5 lg:px-10 py-3 font-light hover:border-b-2 hover:border-red-500"     href="/zh/tags/"  >标签</a>
+    
+</li>
+
+
+
+
+
+
+
+<li>
+    <a    class="px-5 lg:px-10 py-3 font-light hover:border-b-2 hover:border-red-500"    >联系我</a>
+    
+</li>
+
+
+</ul>
+
+
+
+
+        </div>
+    </nav>
+    <div class="absolute top-8 right-5 flex items-center lg:hidden">
+        
+        <button @click="openMenu = !openMenu" type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-gray-100 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="openMenu">
+            
+            <svg x-show="!openMenu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+            <svg x-show="openMenu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+        <header class="flex flex-col w-full items-center justify-center text-white py-1 lg:py-8">
+    <div class="w-full">
+        <div class="flex flex-1 flex-row justify-between">
+            <h2 class="w-full text-center text-3xl sm:text-5xl font-crimson font-medium lg:font-bold tracking-tight text-gray-300">
+                <a href="https://www.angularcorp.com/">极客科技</a>
+            </h2>
+        </div>
+        <p
+            class="w-full text-center pl-1 pb-4 sm:pt-3 sm:pb-0 font-crimson font-normal text-xl sm:text-2xl leading-8 text-gray-500">
+            让 AI 节约你的每一分钟</p>
+    </div>
+
+    <div class="relative w-full lg:w-1/2 h-12 my-1 lg:my-5">
+        <form action="/zh/search" method="get">
+            <input
+                class="bg-gray-800 placeholder:italic placeholder:text-gray-600 w-full h-12 rounded-full mt-1 pl-5 pr-5 border border-gray-800 text-gray-100"
+                placeholder='输入关键词...' type="text" name="q" id="search-query" />
+
+            <button
+                class="absolute inset-y-2 right-1 w-28 h-10 font-light bg-gray-900 hover:bg-red-500 text-gray-500 hover:text-gray-100 rounded-full cursor-pointer"
+                type="submit">搜索</button>
+        </form>
+    </div>
+
+    
+    <div class="w-full flex flex-row justify-start text-gray-500 text-lg px-1 border-l-4 border-l-red-500">
+        <ul class="flex flex-row gap-x-2">
+            <li class="">
+                <a href="/" class="hover:text-gray-100">首页</a>
+            </li>
+            
+            <li>
+                &gt;&nbsp;&nbsp;<a href="/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/" class="hover:text-gray-100"></a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="w-full h-2 border-b border-b-gray-600/50 border-dashed font-light text-gray-300">
+    </div>
+    
+
+</header>
+
+        <div class="
+            flex flex-col overflow-hidden
+            xl:px-0
+            lg:flex-row lg:space-x-8
+        ">
+            <main class="w-full overflow-hidden">
+                
+
+<article class="single-article">
+    
+    <div class="group relative">
+        <h1 class="text-3xl font-medium leading-10 text-gray-400 hover:text-gray-100">
+            <a href="/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/">
+                
+            </a>
+        </h1>
+        <time datetime="2025-03-16" class="flex items-center py-2 text-xl text-gray-600">
+            0001-01-01 00:00
+            &nbsp;&nbsp;|&nbsp;&nbsp;2 minute read
+        </time>
+
+        <div
+            class="mt-1 lg:pb-10 px-2 text-2xl leading-10 font-thin text-gray-500 overflow-hidden break-words article-body">
+            <h1 id="ubuntu2004安装部分软件">ubuntu20.04安装部分软件</h1>
+<h2 id="安装docker">安装docker</h2>
+<h4 id="1卸载可能存在的或者为安装成功的docker版本">1、卸载可能存在的或者为安装成功的Docker版本</h4>
+<pre tabindex="0"><code>sudo apt-``get` `remove docker docker-engine docker-ce docker.io
+</code></pre><h4 id="2添加阿里云的gpg密钥">2、添加阿里云的GPG密钥</h4>
+<pre tabindex="0"><code>curl -fsSL http:``//mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+</code></pre><h4 id="3使用以下命令设置存储库">3、使用以下命令设置存储库</h4>
+<pre tabindex="0"><code>sudo add-apt-repository ``&#34;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&#34;
+</code></pre><h4 id="4安装最新版本的docker">4、安装最新版本的Docker</h4>
+<pre tabindex="0"><code>sudo apt-``get` `update
+</code></pre><pre tabindex="0"><code>sudo apt-``get` `install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre><h4 id="5验证docker是否安装成功">5、验证Docker是否安装成功</h4>
+<pre tabindex="0"><code>-- 查看docker 版本
+docker version
+</code></pre><h2 id="二安装postgresql">二、安装postgresql</h2>
+<h4 id="1add-postgre-sql-13-repository">1、Add Postgre SQL 13 repository</h4>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install curl gpg gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates
+</code></pre><h4 id="add-the-apt-repositoryimporting-gpg-key">add the APT repository，importing GPG key</h4>
+<pre tabindex="0"><code>curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
+</code></pre><h4 id="add-repository-contents">add repository contents</h4>
+<pre tabindex="0"><code>echo &#34;deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main&#34; |sudo tee  /etc/apt/sources.list.d/pgdg.list
+</code></pre><h4 id="2install-postgresql-13">2、Install PostgreSQL 13</h4>
+<pre tabindex="0"><code>sudo apt update
+</code></pre><pre tabindex="0"><code>sudo apt install postgresql-13 postgresql-client-13
+</code></pre><pre tabindex="0"><code>systemctl status postgresql@13-main.service
+</code></pre><h4 id="3configure-remote-connection">3、Configure remote Connection</h4>
+<pre tabindex="0"><code>sudo vi /etc/postgresql/13/main/postgresql.conf 
+
+# Listen on all interfaces
+listen_addresses = &#39;*&#39;
+
+# Listen on specified private IP address
+listen_addresses = &#39;192.168.10.11&#39;
+</code></pre><pre tabindex="0"><code>sudo vi /etc/postgresql/13/main/pg_hba.conf
+</code></pre><pre tabindex="0"><code># Accept from anywhere
+host all all 0.0.0.0/0 md5
+
+# postgres用户通过密码登录
+host all postgres  trust
+
+# Accept from trusted subnet
+host all all 10.10.10.0/24 md5
+</code></pre><pre tabindex="0"><code>sudo systemctl restart postgresql
+</code></pre><h4 id="4修改默认postgres用户的密码">4、修改默认postgres用户的密码</h4>
+<pre tabindex="0"><code># 进入psql
+sudo -u postgres psql
+
+修改密码
+\password postgres  并输入密码dizai123456
+</code></pre><h2 id="docker安装rabbitmq389">docker安装rabbitMQ:3.8.9</h2>
+<h4 id="1创建需要映射的目录">1、创建需要映射的目录</h4>
+<pre tabindex="0"><code>mkdir -p /home/sjcl/docker_file/rabbitmq3.8.9/{data,conf,log}
+
+# 记得文件授权！
+chmod -R 777 /home/sjcl/docker_file/rabbitmq3.8.9/{data,conf,log}
+</code></pre><h4 id="2下载并启动">2、下载并启动</h4>
+<pre tabindex="0"><code>docker run -d -it
+--privileged=true 
+--name rabbitmq3.8.9 
+-p 5672:5672 
+-p 15672:15672 
+-v /home/sjcl/docker_file/rabbitmq3.8.9/data:/var/lib/rabbiitmq 
+-v /home/sjcl/docker_file/rabbitmq3.8.9/conf:/etc/rabbitmq 
+-v /home/sjcl/docker_file/rabbitmq3.8.9/log:/var/log/rabbitmq 
+-e RABBITMQ_DEFAULT_USER=dizai 
+-e RABBITMQ_DEFAULT_PASS=123456 
+rabbitmq:3.8.9-management
+</code></pre><h4 id="3开启rabbitmq_management插件">3、开启rabbitmq_management插件</h4>
+<pre tabindex="0"><code># 进入容器中
+docker exec -it &lt;容器id&gt; /bin/bash
+
+# 开启插件，则UI可访问
+rabbitmq-plugins enable rabbitmq_management
+</code></pre><h2 id="docker安装geoserver2180">docker安装geoserver:2.18.0</h2>
+<h4 id="1创建需要映射的目录-1">1、创建需要映射的目录</h4>
+<pre tabindex="0"><code>mkdir /home/sjcl/docker_file/geoserver2.18.0/data
+
+chmod 777 /home/sjcl/docker_file/geoserver2.18.0/data
+</code></pre><h4 id="2下载并启动-1">2、下载并启动</h4>
+<pre tabindex="0"><code>docker run -d 
+--name geoserver2.18.0 
+-p 48080:8080 
+-v /home/sjcl/docker_file/geoserver2.18.0/data:/opt/geoserver/data_dir 
+-e GEOSERVER_DATA_DIR=/opt/geoserver/data_dir 
+-e GEOSERVER_ADMIN_PASSWORD=dizai123456 
+kartoza/geoserver:2.18.0
+</code></pre><h2 id="apt">apt</h2>
+<p>配置目录：/etc/apt</p>
+<p>软件源设置文件：/etc/apt/sources.list（设置阿里源、清华源等）</p>
+<h2 id="安装mysql">安装mysql</h2>
+<p>链接：https://developer.aliyun.com/article/758177</p>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install mysql-server
+sudo systemctl status mysql
+
+# 运行初始化安全脚本
+sudo mysql_secure_installation
+</code></pre><h2 id="安装nginx">安装nginx</h2>
+<pre tabindex="0"><code>sudo apt update
+apt install nginx
+</code></pre><h2 id="安装redis">安装redis</h2>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install redis-server
+</code></pre><p>配置远程访问，修改/etc/redis/redis.conf</p>
+<p>注释bind 127.0.0.1</p>
+<p>设置 protect-mode=no（不推荐）或者添加密码</p>
+<h2 id="安装samba">安装samba</h2>
+<pre tabindex="0"><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install samba samba-common
+</code></pre><p>配置使用</p>
+<pre tabindex="0"><code># 创建要共享的目录并赋予权限
+mkdir ~/shared
+sudo chmod 777 ~/shared
+
+# 添加samba用户(必须是系统已有用户)，并输入密码
+sudo smbpasswd -a &lt;用户名&gt;
+
+# 修改samba的配置文件，添加共享目录的设置
+sudo vi /etc/samba/smb.conf
+# 增添以下内容：
+[shared]
+comment = share folder
+browseable = yes
+path = ~/shared
+valid users = &lt;your registerd name&gt;
+public = yes
+available = yes
+writable = yes
+
+# 重启smbd服务
+sudo systemctl restart smbd.service
+</code></pre><p>windows访问：win+R输入：\\ip     然后回车输入用户名密码</p>
+
+        </div>
+    </div>
+    <div class="text-gray-500 text-lg">
+        文章链接:&nbsp;<a href="https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/"
+            class="border-b border-b-gray-500 hover:text-gray-400">https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</a>
+    </div>
+    
+    
+        <div class="my-10 py-5 border-t border-dashed border-t-white/10 text-xl">
+  <div id="disqus_thread"></div>
+  <script>
+      
+
+      
+
+      (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://******.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
+</div>
+    
+</article>
+
+
+            </main>
+
+            <aside id="sidebar" class="aside-container">
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+        关于我们
+    </div>
+
+    <img src="/image/logo.webp?v=1742227238" class="w-80 self-center" alt="Logo" />
+
+    <p class="leading-8 text-center text-lg font-light mt-3">
+        
+    </p>
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+        </svg>
+        最近发布
+    </div>
+
+    <ul class="text-lg">
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/hexo/" class="py-5 hover:text-gray-300"></a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/" class="py-5 hover:text-gray-300"></a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/git-commits-specification/" class="py-5 hover:text-gray-300"></a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/docsify/" class="py-5 hover:text-gray-300"></a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/discuzq/" class="py-5 hover:text-gray-300"></a>
+        </li>
+        
+        
+    </ul>
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+        </svg>
+        热门分类
+    </div>
+    <ul class="leading-10 text-lg">
+        
+        <li class="aside-section-content-empty">
+            未发现分类
+        </li>
+        
+
+    </ul>
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+        </svg>
+        热门标签
+    </div>
+    <div class="flex flex-wrap gap-2 text-lg leading-8 pt-3 pl-1">
+        
+        <span class="aside-section-content-empty inline-block bg-gray-800 px-4 rounded-full">
+            未发现标签
+        </span>
+        
+        
+    </div>
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+        </svg>
+        归档统计
+    </div>
+    <ul class="leading-10 text-lg font-light">
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="mb-1 border-b border-b-white/10 border-dashed">
+            <a href="/zh/archives">0001年01月<span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">21</span></a>
+        </li>
+        
+        
+        
+    </ul>
+
+    
+    <div class="aside-section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+        </svg>
+        联系方式
+    </div>
+    <div class="flex flex-row gap-2">
+        Email：hzreal0823@outlook.com
+    </div>
+</aside>
+        </div>
+
+        <footer class="flex flex-col lg:flex-row items-center justify-center gap-2 text-xl mt-8 py-8 border-t border-gray-100/10">
+    <div class="text-center text-gray-500/80">
+        
+        &#xA9; 2019 ~ 2025 by Nico. All Rights Reserved.
+        
+    </div>
+    <div>
+        
+        <a class="hover:text-gray-100" href=" /en ">🇺🇸EN</a>
+        
+        <a class="hover:text-gray-100" href=" /zh ">🇨🇳CN</a>
+        
+    </div>
+</footer>
+
+        <div class="cookie-container text-center py-12 text-xl lg:text-2xl font-thin text-gray-500">
+  
+  <p>
+    We use cookies on this website to give you the best experience on our
+    site and show you relevant ads. To find out more, read our
+    <a href="/zh/privacy/" class="text-red-600">privacy policy</a> and <a href="/zh/terms/" class="text-red-600">cookie
+      policy</a>.
+  </p>
+  
+  
+  <button class="cookie-btn w-32 h-12 lg:h-16 mt-5 py-2 bg-red-600 text-white rounded-full hover:scale-105">
+    Okay
+  </button>
+</div>
+<script src="/js/cookie.js"></script>
+
+    </div>
+</body>
+
+</html>

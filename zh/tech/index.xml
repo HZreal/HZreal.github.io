@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teches on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://www.angularcorp.com/zh/tech/</link>
+    <description>Recent content in Teches on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://www.angularcorp.com/zh/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/cache/</guid>
+      <description>缓存 简介 简而言之，即是数据存储的缓冲区。使用缓存之后，可以减轻访问数据库的压力，显著的提升系统的性能。
+使用缓存的一般流程如下：
+缓存通常有两种：
+服务器主集本身的内存缓存，也就是我们说的二级缓存。 相比于缓存中间件性能更好。但只能应用于本机，若系统分布式部署，会存在数据不一致的问题。 缓存中间件，比如：Redis、Memcached等 适用于分布式缓存，解决分布式数据一致性问题 有些业务场景，分布式缓存和二级缓存可以一起使用
+缓存带来的问题 1. 缓存雪崩 缓存雪崩指的是当某一个时间段出现大规模的缓存失效的情况，此时大量的并发请求直接命中在数据库上面，导致数据库压力巨大，甚至宕机。
+分析
+造成缓存雪崩的关键在于在同一时间段大量的key失效。出现这个问题的可能性：1. 缓存宕机。2. 采用了相同的过期时间。
+解决方式
+过期时间采用随机值 若真的发生了缓存雪崩，使用熔断机制。当流量到达一定阈值，直接返回“系统拥挤”之类的提示，防止过多的请求打在数据库上。至少能保证一部分用户是可以正常使用，其他用户多刷新几次也能得到结果。 提高数据库的容灾能力，可以使用分库分表，读写分离的策略。 防止Redis缓存宕机导致缓存雪崩的问题，可以搭建Redis集群，提高Redis的容灾性。 2. 缓存击穿 缓存击穿指的是大量并发集中访问某一个 key，突然这个 Key 缓存失效了，导致大并发一时间全部命中在数据库上。
+与缓存雪崩对比
+缓存雪崩是大量的 key 失效导致的 而缓存击穿是大规模访问一个失效的 key 导致的 分析
+关键在于某个热点 key 失效了，导致大并发集中打在数据库上。
+所以要从两个方面解决，第一是否可以考虑热点key不设置过期时间，第二是否可以考虑降低打在数据库上的请求数量。
+解决方式
+若业务允许，对热点 key 可以设置永不过期 使用互斥锁。当缓存失效时，只有拿到锁才可以查询数据库，降低了在同一时刻命中在数据库上的请求。 可以对 Key 进行加锁 相应的，加锁会导致系统性能降低。 3. 缓存穿透 假如请求的 key 是在缓存中是不存在的，那缓存查不到就会去数据库查询。如果有大量这样的请求，这些请求像“穿透”了缓存一样直接命中在数据库上，这种现象就叫做缓存穿透。
+分析
+关键点是缓存中查不到 Key，这些 key 是不存在的
+PS：说明了边界安全的重要性。应该做好参数检验，外界不可信
+解决方式
+把无效的Key存入缓存。如果缓存查不到，数据库也查不到，可以把这个 Key 值存入缓存，并设置value=&amp;ldquo;null&amp;rdquo;，当下次再通过这个Key 查询时就不需要再查询数据库。
+弊端是，假如传进来的这个不存在的Key值每次都是随机的，那这种做法无意义。 使用布隆过滤器。布隆过滤器的作用是某个 key 不存在，那么就一定不存在，它说某个 key 存在，那么很大可能是存在(存在一定的误判率)。因此，可以在缓存之前再加一层布隆过滤器，在查询的时候先去布隆过滤器查询 key 是否存在，如果不存在就直接返回。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/centos7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/centos7/</guid>
+      <description>centOS7 安装yum 查看端口 netstat -anp |grep 80
+安装wget yum install wget
+systemctl的所有service配置文件目录为/usr/lib/systemd/system
+watch 命令监听 watch -d -n 2 监听执行某个命令，每2秒刷新一次
+top 命令实时查看CPU内存
+// 查看内存，每2秒刷新一次 free -m -s 2</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/clickhouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/clickhouse/</guid>
+      <description>clickhouse 安装搭建 server配置 路径 /etc/clickhouse-server
+用户配置
+user.xml user.d/ server配置
+config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;ndash;&amp;gt; default &amp;ndash;&amp;gt; 标签下的password修改成password_sha256_hex，并把密文填进去
+&amp;lt;password_sha256_hex&amp;gt;密码密文&amp;lt;/password_sha256_hex&amp;gt; 设置远程可访问 vim config.xml 找到 listen_host 标签，修改为以下:
+&amp;lt;listen_host&amp;gt;0.0.0.0&amp;lt;/listen_host&amp;gt; 启动 访问 clickhouse-client -h ip地址 -d default -m -u default --password 密码明文 注意参数--password不能简写为-p 基本操作CURD </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/gis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/gis/</guid>
+      <description>Gis 空间数据 空间数据基本特征 空间特征
+空间实体的位置或现在所处的地理位置及拓扑关系和几何特征
+属性特征
+主要指的是专题属性，也是非定位数据，指实体所具有的各种性质，如房屋的结构、高度、层数、使用的主要建筑材料、功能等。专题属性通常以数字、符号、文本和图像等方式表示。专题属性的表示方式主要有表格和图形（或图像）两种。
+表格
+通过囿定的表格格式详细列出空间实体的参数和描述数据。一般情况下，表格数据精确、明了、易于理解
+图形或图像
+无论是通过矢量还是栅格表示地理空间中的实体，如果属性特征是通过属性值的级别来表示的，就可以在同一级别的空间范围内充填一定的颜色或图例符号。例如，在绘制或显示某一城市的污染专题图时，任意级别的污染区域可以通过颜色来加以表示。以图形图像表示的属性数据具有隐含的性质，必须通过图例或有关技术规范才能加以理解。
+时间特征
+指现象或物体随时间的变化，其变化的周期有超短期的、短期的、中期的、长期的和超长期的。
+空间特征数据和属性特征数据常常呈相互独立的变化，即在不同的时间，空间位置不变，但属性数据可能发也变化，或者相反。
+对于现有的大量GIS系统，由于它们并非是时态GIS系统，所以把专题属性和时间特征数据统称为属性数据。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/github/</guid>
+      <description>Github github官方文档
+https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+操作技巧 按s 快速定位到搜索栏 按t 将项目目录树以列全部呈现 按. 将项目在在线vscode中查看 搜索技巧 搜索仓库https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+搜索指令如下 文档https://docs.github.com/cn/search-github
+in操作进行位置搜索 in:name 在标题中搜 如 golang in:name，表示标题中含有golang的 如python in:name in:description in:readme 组合使用： 逗号分开每个位置 如 vue in:name,description stars、fork stars:&amp;gt;=2000 fork:&amp;lt;5000 组合使用： 空格分开多个条件 高亮代码块进行共享 awesome 获取有关优秀项目、学习资料 awesome 内容 如awesome python 可获取大量关于python各个方面的资源 location、language location指定地区 language指定语言（常用）如language:c 高级搜索界面 UI界面搜索https://github.com/search/advanced Github API URL explore
+官方根据你的习惯推荐 链接https://github.com/explore topics
+不同的话题分类 https://github.com/topics 如数据库sql的，https://github.com/topics/sql 如go的，https://github.com/topics/go 如python的, https://github.com/topics/python 还有个很特殊的 awesome https://github.com/topics/awesome 提供优质资源 trending
+搜索相关优质项目，还可以指定今天，本周，本月
+https://github.com/trending
+如搜索go https://github.com/trending/go 如搜索python https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</guid>
+      <description>gRPC 四种模式及应用场景 在 gRPC 中，RPC 调用模式有四种，每种模式适用于不同的业务场景。下面将详细分析这四种模式及其对应的应用场景。
+参考官方文档概念：https://grpc.io/docs/what-is-grpc/core-concepts
+1. 简单 RPC (Unary RPC) 模式描述 客户端发送一个请求，服务端返回一个响应。双方的通信都是一次性的。
+类似于传统的 HTTP 请求-响应模型。
+应用场景 查询服务：客户端请求一些数据，服务端根据请求参数返回一个结果。比如获取用户信息、查询订单状态等。 简单的计算服务：客户端传入参数，服务端执行计算后返回结果，比如加法、减法、获取某个 ID 的计算结果等。 无需复杂交互的任务：单次请求即能获得结果的场景，如调用支付接口、获取天气数据等。 示例 rpc GetUserInfo(UserRequest) returns (UserResponse); 2. 服务端流式 RPC (Server Streaming RPC) 模式描述 客户端发送一个请求，服务端返回一个响应流。客户端接收服务端的多个响应数据，直到服务端发送完所有数据。
+应用场景 分页或批量获取数据：客户端需要从服务端获取大量数据时，通过流的方式接收数据，不需要一次性加载完所有数据，比如数据导出或查询日志。
+实时数据推送：适合服务端需要不断推送数据给客户端的场景，比如股票行情、实时天气更新、监控数据等。
+文件下载：客户端请求文件，服务端以数据块形式流式返回文件内容。
+示例 rpc GetLogStream(LogRequest) returns (stream LogEntry); 3. 客户端流式 RPC (Client Streaming RPC) 模式描述 客户端发送一个流请求，服务端接收所有请求后返回一个响应。客户端可以分批次将数据流发送到服务端。
+应用场景 批量数据上传: 客户端分批次发送数据到服务端，如文件分块上传、日志批量上传等。
+传感器数据采集: 客户端持续收集传感器的数据，并将其流式发送至服务端进行处理。
+数据聚合: 客户端发送多个值，服务端处理后返回汇总结果，如计算平均值、订单总金额等。
+示例 rpc UploadLogStream(stream LogEntry) returns (UploadStatus); 4. 双向流式 RPC (Bidirectional Streaming RPC) 模式描述 客户端和服务端都可以通过流的方式不断发送和接收消息。双方可以并发地发送和接收消息，且不需要等待对方完成发送。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/http/</guid>
+      <description>Http jsonp 概念：浏览器通过script标签中src属性向服务端发送执行函数的名字，服务端根据函数名、服务端数据，拼接成一个函数调用的字符串给客户端script标签执行，这称之为JSONP
+特点：
+不属于axios请求，因为没有使用XMLHttpRequest对象 仅支持get请求，不支持post、put、delete </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/notebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/notebook/</guid>
+      <description>notebook win10计算文件Hash certutil -hashfile 文件名 md5 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/pm2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/pm2/</guid>
+      <description>PM2 参考：https://mp.weixin.qq.com/s/S8Gw2XzuflnN2QMSVXhLhg
+场景 node 应用跑的时候突然抛了个错，崩溃了，是不是需要重新跑起来？这时候是不是就需要另一个进程来自动做重启这件事情？ node 应用的日志默认输出在控制台，如果想输出到不同的日志文件，是不是可以让另一个进程获取 node 应用的输出，然后写文件来实现？ node 是单线程的，而机器是多个 cpu 的，为了充分利用 cpu 的能力，我们会用多个进程来跑 node 应用，来提高性能。这种通用逻辑是不是也可以放到一个单独进程里来实现？ node 运行时的 cpu、内存等资源的占用，是不是需要监控？这时候是不是可以让另一个进程来做？ 线上的 node 应用不只是跑起来就行了，还要做自动重启、日志、多进程、监控这些事情。
+简介 pm2 是 process manager，进程管理，它是第二个大版本，和前一个版本差异很大，所以叫 pm2.
+pm2 的主要功能就是进程管理、日志管理、负载均衡、性能监控这些。
+安装 npm install -g pm2 基本命令 pm2 start main.js pm2 start &amp;lt;pid&amp;gt;pm2 stop main.jspm2 logspm2 log &amp;lt;pid&amp;gt; PM2 start 参数 -i num 就是启动 num 个进程做负载均衡
+pm2 start app.js -i max 根据CPU核数启动进程的个数
+动态调整进程数 pm2 scale main 3 把集群调整为 3 个进程</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/postgis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/postgis/</guid>
+      <description>postgis 安装扩展 先查找最新postgis插件版本号
+sudo apt-cache search postgis 找到当前已安装postgreSQL版本对应的postgis版本
+ps:查看postgreSQL版本 select version()
+sudo apt-get install postgresql-14-postgis-3 赋予某个库空间数据库的能力
+CREATE EXTENSION postgis; postgis_topology支持拓扑
+CREATE EXTENSION postgis_topology; pgrouting 提供了对路网的分析支持，包括双向Dijkstra最短路径等10多种功能，是postgis的插件，需要额外安装</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/postgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/postgresql/</guid>
+      <description>postgreSQL 安装搭建 https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/
+指定版本安装
+sudo apt-get install postgresql-13 配置 路径 ubuntu下：
+/etc/postgresql//main
+centOS下：
+/var/lib/pgsql/13/data/postgresql.conf postgres.conf pg数据库配置文件
+包含设置data/hba/indet等目录，IP/port，最大连接数，认证，ssl，内存，磁盘等等
+pg_hba.conf 客户端认证配置文件即host-based authentication：基于主机的认证
+多种连接pg数据库的方式
+pg_ident.conf 用户名称映射，可添加映射用户
+用户名密码 设置可远程访问 启动关闭 systemctl start systemctl stop 访问 切换用户
+sudo -i -u postgres 登入
+psql -h 192.168.1.7 -p 5432 -U postgres -d testdb -W 密码 基本操作 数据库操作 1、列举数据库：\l 2、选择数据库：\c 数据库名 3、查看该某个库中的所有表：\dt 4、切换数据库：\c db_name 5、查看某个库中的某个表结构：\d 表名 6、查看某个库中某个表的记录：select * from apps limit 1; 7、显示字符集：\encoding 8、退出psgl：\q
+表、库操作 查询 基本CURD insert update set delete from 条件查询 and or not in not in between and like group having order by 聚合 关联查询 inner join / join left join right join full outer join 全外连接 cross join 交叉连接 （笛卡尔积） Union查询 union</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</guid>
+      <description>用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</guid>
+      <description>ubuntu20.04安装部分软件 安装docker 1、卸载可能存在的或者为安装成功的Docker版本 sudo apt-``get` `remove docker docker-engine docker-ce docker.io 2、添加阿里云的GPG密钥 curl -fsSL http:``//mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 3、使用以下命令设置存储库 sudo add-apt-repository ``&amp;#34;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&amp;#34; 4、安装最新版本的Docker sudo apt-``get` `update sudo apt-``get` `install docker-ce docker-ce-cli containerd.io docker-compose-plugin 5、验证Docker是否安装成功 -- 查看docker 版本docker version 二、安装postgresql 1、Add Postgre SQL 13 repository sudo apt updatesudo apt install curl gpg gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates add the APT repository，importing GPG key curl -fsSL https://www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/</guid>
+      <description>控制反转 IoC 与依赖注入 DI 引入 讨论之前，先来简述一下软件对象中的耦合
+在软件开发过程中，对象之间的耦合关系是一个常见的问题。传统的面向对象设计中，对象之间的依赖通常是硬编码在代码中的，这导致了代码的高耦合度和低灵活性。当一个对象依赖于另一个对象时，它通常会直接实例化或调用该对象，这使得两个对象之间的关系非常紧密，难以进行单元测试和代码重用。
+例如，考虑一个电商网站的购物车功能。在购物车中直接实例化商品对象可能会导致购物车模块与商品模块之间的紧密耦合，使得如果需要修改商品类的实现或者替换为其他商品类时，就必须要修改购物车模块的代码。这种紧耦合的设计不仅使代码难以维护和扩展，还降低了代码的可测试性和可重用性。
+将这个例子缩小到类对象之间的调用：对象 A 依赖于对象 B，那么对象 A 在初始化或需要调用 B 的时候，自己必须主动去创建对象 B 或者使用已经创建的对象 B。无论是创建还是使用对象 B，控制权都在自己手上。
+为了解决这一问题，控制反转（IoC）和依赖注入（DI）应运而生。它们提供了一种解耦的方法，通过将对象之间的依赖关系转移到外部容器（loC 容器）或框架中管理，实现了对象之间的松耦合。
+简言之，通过 IoC 与 DI，调用者将依赖对象的创建初始化逻辑从自身抽离解耦出来，调用者只负责声明调用，依赖对象只负责实现自己，而创建依赖对象的控制权交给了“第三方”（IoC容器）
+控制反转 loC 案例：假设你现在需要与外部客户对接某业务，这个业务随着外部客户的不同，对接流程也不同，于是每个客户，都需要制定相应的业务对接流程，每当有了新的客户，不得不继续制定该客户的业务对接流程。显然，这严重耦合并依赖各个不同客户。最终你受不了了，自己制定一个对接方案，开发一个对接平台，各个客户必须遵守你制定对接方案才能进行业务对接，于是各个客户反过来依赖你的对接标准，反转了控制，倒置了依赖。
+这个过程中，你就是调用者，客户就是依赖对象，你制定的标准、对接平台就是 IoC 容器。从调用者不得不自身一个个实现对接业务到将对接业务解耦到统一标准中的这一过程，可以理解为控制反转
+控制反转是一种思想，其基本思想是：借助于“第三方”实现具有依赖关系的对象之间的解耦。
+依赖注入 DI 以 python 代码为例
+未使用依赖注入之前：
+class Dependency: def __init__(self): pass def operation(self): return &amp;#34;Dependency operation&amp;#34; class Client: def __init__(self): pass def do_something(self): # 手动创建 Dependency 对象 dependency = Dependency() return dependency.operation() 此时，若 Dependency 的初始化函数发生变化，Client 中手动创建 Dependency 对象的代码也需要改动！</description>
+    </item>
+    
+  </channel>
+</rss>

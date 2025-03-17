@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Goes on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://www.angularcorp.com/zh/go/</link>
+    <description>Recent content in Goes on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://www.angularcorp.com/zh/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.angularcorp.com/zh/go/go-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B9%8B-wire-%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.angularcorp.com/zh/go/go-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B9%8B-wire-%E5%BA%93/</guid>
+      <description>Go 依赖注入之 wire 库 PS: 若不了解控制反转和依赖注入，可参考博文：https://blog.csdn.net/qq_38269333/article/details/139300610?spm=1001.2014.3001.5501
+简介 wire 库是管理和解析依赖关系的。
+随着项目规模的增长，手动管理依赖关系变得越来越困难，容易导致代码的复杂性和耦合度增加。为了解决这一问题，Google 开发了一个名为 wire 的依赖注入工具，它可以自动生成依赖注入代码，帮助开发者管理依赖关系，提高代码的清晰度和可维护性。
+GitHub 地址：https://github.com/google/wire
+安装命令 go get github.com/google/wire/cmd/wire 使用示例 以常见的 controller、service、model 模式为例，示例如下:
+代码片段
+user.go
+package main import ( &amp;#34;database/sql&amp;#34; &amp;#34;net/http&amp;#34; ) // User 是用户模型 type User struct { ID int Name string Email string } // UserRepository 是用户存储库 type UserRepository struct { DB *Database } // UserService 是用户服务 type UserService struct { Repo *UserRepository } // UserController 是用户控制器 type UserController struct { Service *UserService } // GetUserByID 处理获取用户的HTTP请求 func (controller *UserController) GetUserByID(w http.</description>
+    </item>
+    
+  </channel>
+</rss>
