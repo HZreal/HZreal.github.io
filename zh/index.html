@@ -16,7 +16,7 @@
     <meta name="keywords" content="SEO keywords">
     <meta name="description" content="SEO description">
     <link rel="canonical" href="https://hzreal.github.io/zh/" />
-    <link rel="icon" href="/favicon.ico?v=1742232913" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?v=1742302990" type="image/x-icon">
     
 <link rel="stylesheet" href="/css/app.min.0a6aef139934fd51b94462b95d8d24c84248539ad057d6c32a7b20376b85062a.css" integrity="sha256-CmrvE5k0/VG5RGK5XY0kyEJIU5rQV9bDKnsgN2uFBio=" crossorigin="anonymous">
     
@@ -61,7 +61,7 @@
         <div x-data="{ openMenu: false }" class="relative">
     <nav class="flex flex-1 flex-col lg:flex-row items-center justify-between">
         <a href="/">
-            <img src="/image/logo.webp?v=1742232913" alt="Logo"
+            <img src="/image/logo.webp?v=1742302990" alt="Logo"
                 class="w-16 h-16 my-5 p-1 bg-gray-100 rounded-full object-cover cursor-pointer hover:scale-110" />
         </a>
         <div class="hidden lg:block" :class="{'hidden': !openMenu}">
@@ -306,7 +306,124 @@
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
+            class="w-full h-48 rounded-2xl object-cover" />
+        
+
+    </div>
+    <div class="w-full lg:p-5 overflow-auto">
+        <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
+            <a href="/zh/tech/centos7/">
+                CentOS7  相关命令
+            </a>
+        </h3>
+        <div class="flex flex-row items-center justify-start py-1 text-lg">
+            
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
+                |
+                1 minute read</time>
+            
+        </div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">centOS7 安装yum 查看端口 netstat -anp |grep 80
+安装wget yum install wget
+systemctl的所有service配置文件目录为/usr/lib/systemd/system
+watch 命令监听 watch -d -n 2 监听执行某个命令，每2秒刷新一次
+top 命令实时查看CPU内存
+// 查看内存，每2秒刷新一次 free -m -s 2</div>
+    </div>
+</article>
+    
+
+
+    
+
+    
+    
+    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
+    <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
+        
+        
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
+            class="w-full h-48 rounded-2xl object-cover" />
+        
+
+    </div>
+    <div class="w-full lg:p-5 overflow-auto">
+        <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
+            <a href="/zh/tech/clickhouse/">
+                clickhouse 数据库使用
+            </a>
+        </h3>
+        <div class="flex flex-row items-center justify-start py-1 text-lg">
+            
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
+                |
+                1 minute read</time>
+            
+        </div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">clickhouse 安装搭建 server配置 路径 /etc/clickhouse-server
+用户配置
+user.xml user.d/ server配置
+config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;ndash;&amp;gt; default &amp;ndash;&amp;gt; 标签下的password修改成password_sha256_hex，并把密文填进去
+&amp;lt;password_sha256_hex&amp;gt;密码密文&amp;lt;/password_sha256_hex&amp;gt; 设置远程可访问 vim config.xml 找到 listen_host 标签，修改为以下:
+&amp;lt;listen_host&amp;gt;0.0.0.0&amp;lt;/listen_host&amp;gt; 启动 访问 clickhouse-client -h ip地址 -d default -m -u default --password 密码明文 注意参数--password不能简写为-p 基本操作CURD </div>
+    </div>
+</article>
+    
+
+
+    
+
+    
+    
+    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
+    <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
+        
+        
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
+            class="w-full h-48 rounded-2xl object-cover" />
+        
+
+    </div>
+    <div class="w-full lg:p-5 overflow-auto">
+        <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
+            <a href="/zh/tech/gis/">
+                gis 空间数据特征
+            </a>
+        </h3>
+        <div class="flex flex-row items-center justify-start py-1 text-lg">
+            
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
+                |
+                1 minute read</time>
+            
+        </div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">Gis 空间数据 空间数据基本特征 空间特征
+空间实体的位置或现在所处的地理位置及拓扑关系和几何特征
+属性特征
+主要指的是专题属性，也是非定位数据，指实体所具有的各种性质，如房屋的结构、高度、层数、使用的主要建筑材料、功能等。专题属性通常以数字、符号、文本和图像等方式表示。专题属性的表示方式主要有表格和图形（或图像）两种。
+表格
+通过囿定的表格格式详细列出空间实体的参数和描述数据。一般情况下，表格数据精确、明了、易于理解
+图形或图像
+无论是通过矢量还是栅格表示地理空间中的实体，如果属性特征是通过属性值的级别来表示的，就可以在同一级别的空间范围内充填一定的颜色或图例符号。例如，在绘制或显示某一城市的污染专题图时，任意级别的污染区域可以通过颜色来加以表示。以图形图像表示的属性数据具有隐含的性质，必须通过图例或有关技术规范才能加以理解。
+时间特征
+指现象或物体随时间的变化，其变化的周期有超短期的、短期的、中期的、长期的和超长期的。
+空间特征数据和属性特征数据常常呈相互独立的变化，即在不同的时间，空间位置不变，但属性数据可能发也变化，或者相反。
+对于现有的大量GIS系统，由于它们并非是时态GIS系统，所以把专题属性和时间特征数据统称为属性数据。</div>
+    </div>
+</article>
+    
+
+
+    
+
+    
+    
+    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
+    <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
+        
+        
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
@@ -341,11 +458,11 @@ package main import ( &amp;#34;database/sql&amp;#34; &amp;#34;net/http&amp;#34; 
 
     
     
-    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
+    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
@@ -385,19 +502,19 @@ package main import ( &amp;#34;database/sql&amp;#34; &amp;#34;net/http&amp;#34; 
 
     
     
-    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
+    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="https://github.com/HZreal/assets/blob/master/markdown_pic/IMG_use_cache.png?raw=true?v=1742232913" alt="use_cache"
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
     </div>
     <div class="w-full lg:p-5 overflow-auto">
         <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/cache/">
-                缓存简介
+            <a href="/zh/tech/http/">
+                Http 之 jsonp
             </a>
         </h3>
         <div class="flex flex-row items-center justify-start py-1 text-lg">
@@ -407,27 +524,9 @@ package main import ( &amp;#34;database/sql&amp;#34; &amp;#34;net/http&amp;#34; 
                 1 minute read</time>
             
         </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">缓存 简介 简而言之，即是数据存储的缓冲区。使用缓存之后，可以减轻访问数据库的压力，显著的提升系统的性能。
-使用缓存的一般流程如下：
-缓存通常有两种：
-服务器主集本身的内存缓存，也就是我们说的二级缓存。 相比于缓存中间件性能更好。但只能应用于本机，若系统分布式部署，会存在数据不一致的问题。 缓存中间件，比如：Redis、Memcached等 适用于分布式缓存，解决分布式数据一致性问题 有些业务场景，分布式缓存和二级缓存可以一起使用
-缓存带来的问题 1. 缓存雪崩 缓存雪崩指的是当某一个时间段出现大规模的缓存失效的情况，此时大量的并发请求直接命中在数据库上面，导致数据库压力巨大，甚至宕机。
-分析
-造成缓存雪崩的关键在于在同一时间段大量的key失效。出现这个问题的可能性：1. 缓存宕机。2. 采用了相同的过期时间。
-解决方式
-过期时间采用随机值 若真的发生了缓存雪崩，使用熔断机制。当流量到达一定阈值，直接返回“系统拥挤”之类的提示，防止过多的请求打在数据库上。至少能保证一部分用户是可以正常使用，其他用户多刷新几次也能得到结果。 提高数据库的容灾能力，可以使用分库分表，读写分离的策略。 防止Redis缓存宕机导致缓存雪崩的问题，可以搭建Redis集群，提高Redis的容灾性。 2. 缓存击穿 缓存击穿指的是大量并发集中访问某一个 key，突然这个 Key 缓存失效了，导致大并发一时间全部命中在数据库上。
-与缓存雪崩对比
-缓存雪崩是大量的 key 失效导致的 而缓存击穿是大规模访问一个失效的 key 导致的 分析
-关键在于某个热点 key 失效了，导致大并发集中打在数据库上。
-所以要从两个方面解决，第一是否可以考虑热点key不设置过期时间，第二是否可以考虑降低打在数据库上的请求数量。
-解决方式
-若业务允许，对热点 key 可以设置永不过期 使用互斥锁。当缓存失效时，只有拿到锁才可以查询数据库，降低了在同一时刻命中在数据库上的请求。 可以对 Key 进行加锁 相应的，加锁会导致系统性能降低。 3. 缓存穿透 假如请求的 key 是在缓存中是不存在的，那缓存查不到就会去数据库查询。如果有大量这样的请求，这些请求像“穿透”了缓存一样直接命中在数据库上，这种现象就叫做缓存穿透。
-分析
-关键点是缓存中查不到 Key，这些 key 是不存在的
-PS：说明了边界安全的重要性。应该做好参数检验，外界不可信
-解决方式
-把无效的Key存入缓存。如果缓存查不到，数据库也查不到，可以把这个 Key 值存入缓存，并设置value=&amp;ldquo;null&amp;rdquo;，当下次再通过这个Key 查询时就不需要再查询数据库。
-弊端是，假如传进来的这个不存在的Key值每次都是随机的，那这种做法无意义。 使用布隆过滤器。布隆过滤器的作用是某个 key 不存在，那么就一定不存在，它说某个 key 存在，那么很大可能是存在(存在一定的误判率)。因此，可以在缓存之前再加一层布隆过滤器，在查询的时候先去布隆过滤器查询 key 是否存在，如果不存在就直接返回。</div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">Http jsonp 概念：浏览器通过script标签中src属性向服务端发送执行函数的名字，服务端根据函数名、服务端数据，拼接成一个函数调用的字符串给客户端script标签执行，这称之为JSONP
+特点：
+不属于axios请求，因为没有使用XMLHttpRequest对象 仅支持get请求，不支持post、put、delete </div>
     </div>
 </article>
     
@@ -437,19 +536,19 @@ PS：说明了边界安全的重要性。应该做好参数检验，外界不可
 
     
     
-    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
+    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
     </div>
     <div class="w-full lg:p-5 overflow-auto">
         <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tool/environment/">
-                开发环境
+            <a href="/zh/tech/postgis/">
+                pg 之空间数据 postgis 插件
             </a>
         </h3>
         <div class="flex flex-row items-center justify-start py-1 text-lg">
@@ -459,7 +558,12 @@ PS：说明了边界安全的重要性。应该做好参数检验，外界不可
                 1 minute read</time>
             
         </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">系统环境 环境 python go node git、svn 编辑器 pycharm pro、webstome、goland、IntelliJ IDEA、 vscode typora sublime text 终端 Xshell git bash WSL、window terminal 工具 谷歌浏览器 VMware chatGPT postman、apifox、easydoc GripData、navicate、RedisInsight、mongosh、compass、pgAdmin、neo4j Desktop 百度网盘、阿里云盘 bandzip ide-eval-resetter、navicat cracker fileZilla、Xftp7 wireshark UML、亿图图示 utools microsoft To Do 配置 jetbrains全家桶编辑器配置 vscode编辑器配置 镜像 ubuntu-20.04-live-server 其他 WPS 有道 geek.exe、软媒全家桶exe snipaste wechat、Tim ToDesk、向日葵 KMPlayer 支付宝开放平台开发助手 vnc Viewer Linux环境 python node redis、mysql、postgre、mongodb、elasticsearch、clickhouse kafka、rabbitMQ git、 nginx、gunicorn、uWSGI ssh-server docker、portainer.io supervisor、pm2 jenkins vmware vsphere </div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">postgis 安装扩展 先查找最新postgis插件版本号
+sudo apt-cache search postgis 找到当前已安装postgreSQL版本对应的postgis版本
+ps:查看postgreSQL版本 select version()
+sudo apt-get install postgresql-14-postgis-3 赋予某个库空间数据库的能力
+CREATE EXTENSION postgis; postgis_topology支持拓扑
+CREATE EXTENSION postgis_topology; pgrouting 提供了对路网的分析支持，包括双向Dijkstra最短路径等10多种功能，是postgis的插件，需要额外安装</div>
     </div>
 </article>
     
@@ -469,112 +573,29 @@ PS：说明了边界安全的重要性。应该做好参数检验，外界不可
 
     
     
-    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
+    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
     </div>
     <div class="w-full lg:p-5 overflow-auto">
         <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/">
-                控制反转 IoC 与依赖注入 DI
+            <a href="/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/">
+                ssh 连接过程
             </a>
         </h3>
         <div class="flex flex-row items-center justify-start py-1 text-lg">
             
-            <time datetime="2025-03-16" class="text-gray-600">2024-11-08 09:32
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
                 |
                 1 minute read</time>
             
         </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">控制反转 IoC 与依赖注入 DI 引入 讨论之前，先来简述一下软件对象中的耦合
-在软件开发过程中，对象之间的耦合关系是一个常见的问题。传统的面向对象设计中，对象之间的依赖通常是硬编码在代码中的，这导致了代码的高耦合度和低灵活性。当一个对象依赖于另一个对象时，它通常会直接实例化或调用该对象，这使得两个对象之间的关系非常紧密，难以进行单元测试和代码重用。
-例如，考虑一个电商网站的购物车功能。在购物车中直接实例化商品对象可能会导致购物车模块与商品模块之间的紧密耦合，使得如果需要修改商品类的实现或者替换为其他商品类时，就必须要修改购物车模块的代码。这种紧耦合的设计不仅使代码难以维护和扩展，还降低了代码的可测试性和可重用性。
-将这个例子缩小到类对象之间的调用：对象 A 依赖于对象 B，那么对象 A 在初始化或需要调用 B 的时候，自己必须主动去创建对象 B 或者使用已经创建的对象 B。无论是创建还是使用对象 B，控制权都在自己手上。
-为了解决这一问题，控制反转（IoC）和依赖注入（DI）应运而生。它们提供了一种解耦的方法，通过将对象之间的依赖关系转移到外部容器（loC 容器）或框架中管理，实现了对象之间的松耦合。
-简言之，通过 IoC 与 DI，调用者将依赖对象的创建初始化逻辑从自身抽离解耦出来，调用者只负责声明调用，依赖对象只负责实现自己，而创建依赖对象的控制权交给了“第三方”（IoC容器）
-控制反转 loC 案例：假设你现在需要与外部客户对接某业务，这个业务随着外部客户的不同，对接流程也不同，于是每个客户，都需要制定相应的业务对接流程，每当有了新的客户，不得不继续制定该客户的业务对接流程。显然，这严重耦合并依赖各个不同客户。最终你受不了了，自己制定一个对接方案，开发一个对接平台，各个客户必须遵守你制定对接方案才能进行业务对接，于是各个客户反过来依赖你的对接标准，反转了控制，倒置了依赖。
-这个过程中，你就是调用者，客户就是依赖对象，你制定的标准、对接平台就是 IoC 容器。从调用者不得不自身一个个实现对接业务到将对接业务解耦到统一标准中的这一过程，可以理解为控制反转
-控制反转是一种思想，其基本思想是：借助于“第三方”实现具有依赖关系的对象之间的解耦。
-依赖注入 DI 以 python 代码为例
-未使用依赖注入之前：
-class Dependency: def __init__(self): pass def operation(self): return &amp;#34;Dependency operation&amp;#34; class Client: def __init__(self): pass def do_something(self): # 手动创建 Dependency 对象 dependency = Dependency() return dependency.operation() 此时，若 Dependency 的初始化函数发生变化，Client 中手动创建 Dependency 对象的代码也需要改动！</div>
-    </div>
-</article>
-    
-
-
-    
-
-    
-    
-
-
-    
-
-    
-    
-    <article class="flex flex-col lg:flex-row items-center  px-1 rounded-md">
-    <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
-        
-        
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
-            class="w-full h-48 rounded-2xl object-cover" />
-        
-
-    </div>
-    <div class="w-full lg:p-5 overflow-auto">
-        <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/centos7/">
-                
-            </a>
-        </h3>
-        <div class="flex flex-row items-center justify-start py-1 text-lg">
-            
-        </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">centOS7 安装yum 查看端口 netstat -anp |grep 80
-安装wget yum install wget
-systemctl的所有service配置文件目录为/usr/lib/systemd/system
-watch 命令监听 watch -d -n 2 监听执行某个命令，每2秒刷新一次
-top 命令实时查看CPU内存
-// 查看内存，每2秒刷新一次 free -m -s 2</div>
-    </div>
-</article>
-    
-
-
-    
-
-    
-    
-    <article class="flex flex-col lg:flex-row items-center bg-gray-800/50 px-1 rounded-md">
-    <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
-        
-        
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
-            class="w-full h-48 rounded-2xl object-cover" />
-        
-
-    </div>
-    <div class="w-full lg:p-5 overflow-auto">
-        <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/clickhouse/">
-                
-            </a>
-        </h3>
-        <div class="flex flex-row items-center justify-start py-1 text-lg">
-            
-        </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">clickhouse 安装搭建 server配置 路径 /etc/clickhouse-server
-用户配置
-user.xml user.d/ server配置
-config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;ndash;&amp;gt; default &amp;ndash;&amp;gt; 标签下的password修改成password_sha256_hex，并把密文填进去
-&amp;lt;password_sha256_hex&amp;gt;密码密文&amp;lt;/password_sha256_hex&amp;gt; 设置远程可访问 vim config.xml 找到 listen_host 标签，修改为以下:
-&amp;lt;listen_host&amp;gt;0.0.0.0&amp;lt;/listen_host&amp;gt; 启动 访问 clickhouse-client -h ip地址 -d default -m -u default --password 密码明文 注意参数--password不能简写为-p 基本操作CURD </div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 </div>
     </div>
 </article>
     
@@ -588,32 +609,25 @@ config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;nda
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
     </div>
     <div class="w-full lg:p-5 overflow-auto">
         <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/gis/">
-                
+            <a href="/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/">
+                ubuntu 上安装部分开发软件
             </a>
         </h3>
         <div class="flex flex-row items-center justify-start py-1 text-lg">
             
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
+                |
+                2 minute read</time>
+            
         </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">Gis 空间数据 空间数据基本特征 空间特征
-空间实体的位置或现在所处的地理位置及拓扑关系和几何特征
-属性特征
-主要指的是专题属性，也是非定位数据，指实体所具有的各种性质，如房屋的结构、高度、层数、使用的主要建筑材料、功能等。专题属性通常以数字、符号、文本和图像等方式表示。专题属性的表示方式主要有表格和图形（或图像）两种。
-表格
-通过囿定的表格格式详细列出空间实体的参数和描述数据。一般情况下，表格数据精确、明了、易于理解
-图形或图像
-无论是通过矢量还是栅格表示地理空间中的实体，如果属性特征是通过属性值的级别来表示的，就可以在同一级别的空间范围内充填一定的颜色或图例符号。例如，在绘制或显示某一城市的污染专题图时，任意级别的污染区域可以通过颜色来加以表示。以图形图像表示的属性数据具有隐含的性质，必须通过图例或有关技术规范才能加以理解。
-时间特征
-指现象或物体随时间的变化，其变化的周期有超短期的、短期的、中期的、长期的和超长期的。
-空间特征数据和属性特征数据常常呈相互独立的变化，即在不同的时间，空间位置不变，但属性数据可能发也变化，或者相反。
-对于现有的大量GIS系统，由于它们并非是时态GIS系统，所以把专题属性和时间特征数据统称为属性数据。</div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">ubuntu20.04安装部分软件 安装docker 1、卸载可能存在的或者为安装成功的Docker版本 sudo apt-``get` `remove docker docker-engine docker-ce docker.io 2、添加阿里云的GPG密钥 curl -fsSL http:``//mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 3、使用以下命令设置存储库 sudo add-apt-repository ``&amp;#34;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&amp;#34; 4、安装最新版本的Docker sudo apt-``get` `update sudo apt-``get` `install docker-ce docker-ce-cli containerd.io docker-compose-plugin 5、验证Docker是否安装成功 -- 查看docker 版本docker version 二、安装postgresql 1、Add Postgre SQL 13 repository sudo apt updatesudo apt install curl gpg gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates add the APT repository，importing GPG key curl -fsSL https://www.</div>
     </div>
 </article>
     
@@ -627,30 +641,35 @@ config.xml config.d/ 设置用户名密码 vim users.xml，找到 users &amp;nda
     <div class="flex-none w-full lg:w-64 h-48 rounded-lg shadow-md bg-gray-900 shadow-gray-800">
         
         
-        <img src="/image/common-writing-empty.webp?v=1742232913" alt=""
+        <img src="/image/common-writing-empty.webp?v=1742302990" alt=""
             class="w-full h-48 rounded-2xl object-cover" />
         
 
     </div>
     <div class="w-full lg:p-5 overflow-auto">
         <h3 class="pt-2 lg:pt-0 line-clamp-1 text-2xl font-medium leading-10 text-gray-400 hover:text-gray-300">
-            <a href="/zh/tech/github/">
-                
+            <a href="/zh/tool/hexo/">
+                博客建设网站之 hexo
             </a>
         </h3>
         <div class="flex flex-row items-center justify-start py-1 text-lg">
             
+            <time datetime="2025-03-16" class="text-gray-600">2025-01-08 09:32
+                |
+                1 minute read</time>
+            
         </div>
-        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">Github github官方文档
-https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
-操作技巧 按s 快速定位到搜索栏 按t 将项目目录树以列全部呈现 按. 将项目在在线vscode中查看 搜索技巧 搜索仓库https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
-搜索指令如下 文档https://docs.github.com/cn/search-github
-in操作进行位置搜索 in:name 在标题中搜 如 golang in:name，表示标题中含有golang的 如python in:name in:description in:readme 组合使用： 逗号分开每个位置 如 vue in:name,description stars、fork stars:&amp;gt;=2000 fork:&amp;lt;5000 组合使用： 空格分开多个条件 高亮代码块进行共享 awesome 获取有关优秀项目、学习资料 awesome 内容 如awesome python 可获取大量关于python各个方面的资源 location、language location指定地区 language指定语言（常用）如language:c 高级搜索界面 UI界面搜索https://github.com/search/advanced Github API URL explore
-官方根据你的习惯推荐 链接https://github.com/explore topics
-不同的话题分类 https://github.com/topics 如数据库sql的，https://github.com/topics/sql 如go的，https://github.com/topics/go 如python的, https://github.com/topics/python 还有个很特殊的 awesome https://github.com/topics/awesome 提供优质资源 trending
-搜索相关优质项目，还可以指定今天，本周，本月
-https://github.com/trending
-如搜索go https://github.com/trending/go 如搜索python https://github.</div>
+        <div class="line-clamp-3 text-xl font-light leading-8 lg:leading-9 text-gray-500">Hexo framework based on node.js
+官网： https://hexo.io
+doc：https://hexo.io/docs/
+简单教程： 【bilibii】 https://b23.tv/xyiGVIV
+安装 npm install -g hexo-cli 创建自己的blog项目 hexo init blog 博客文件存放路径 source/_posts，将自己平时的md文件放入其中即可
+设置主题 默认的主题比较单调，可官网查找合适主题安装
+doc： https://hexo.io/themes/
+主题存放路径 themes/
+使主题生效 修改_config.yml文件，设置theme为你的主题名称（下载在themes目录下的目录名，具体看主题使用说明）
+例如ayer主题的使用说明
+https://github.com/Shen-Yu/hexo-theme-ayer</div>
     </div>
 </article>
     
@@ -705,7 +724,7 @@ https://github.com/trending
         关于我
     </div>
 
-    <img src="/image/logo.webp?v=1742232913" class="w-80 self-center" alt="Logo" />
+    <img src="/image/logo.webp?v=1742302990" class="w-80 self-center" alt="Logo" />
 
     <p class="leading-8 text-center text-lg font-light mt-3">
         
@@ -725,31 +744,31 @@ https://github.com/trending
         
         
         <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/docsify/" class="py-5 hover:text-gray-300">文档建设网站之 docify</a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tech/github/" class="py-5 hover:text-gray-300">玩转 Github 搜索技巧</a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tech/postgresql/" class="py-5 hover:text-gray-300">数据库之 postgresql</a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
+            <a href="/zh/tool/discuzq/" class="py-5 hover:text-gray-300">社区网站之 discuzQ</a>
+        </li>
+        
+        
+        
+        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
             <a href="/zh/tool/environment/" class="py-5 hover:text-gray-300">开发环境</a>
-        </li>
-        
-        
-        
-        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
-            <a href="/zh/tech/cache/" class="py-5 hover:text-gray-300">缓存简介</a>
-        </li>
-        
-        
-        
-        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
-            <a href="/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" class="py-5 hover:text-gray-300">gRPC 介绍</a>
-        </li>
-        
-        
-        
-        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
-            <a href="/zh/go/go-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E4%B9%8B-wire-%E5%BA%93/" class="py-5 hover:text-gray-300">Go 依赖注入之 wire 库</a>
-        </li>
-        
-        
-        
-        <li class="leading-10 line-clamp-1 mb-3 font-light border-b border-b-white/10 border-dashed">
-            <a href="/zh/tech/%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC-ioc-%E4%B8%8E%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-di/" class="py-5 hover:text-gray-300">控制反转 IoC 与依赖注入 DI</a>
         </li>
         
         
@@ -772,6 +791,24 @@ https://github.com/trending
         
         <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
             <a href="/zh/categories/tech/" class="hover:text-gray-300">Tech <span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">7</span></a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
+            <a href="/zh/categories/tool/" class="hover:text-gray-300">tool <span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">5</span></a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
+            <a href="/zh/categories/database/" class="hover:text-gray-300">database <span
                     class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">3</span></a>
         </li>
         
@@ -800,6 +837,33 @@ https://github.com/trending
         
         
         
+        
+        <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
+            <a href="/zh/categories/operation/" class="hover:text-gray-300">operation <span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">1</span></a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
+            <a href="/zh/categories/operations/" class="hover:text-gray-300">operations <span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">1</span></a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="mb-1 border-b border-b-gray-900 border-dashed font-light">
+            <a href="/zh/categories/others/" class="hover:text-gray-300">others <span
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">1</span></a>
+        </li>
+        
+        
+        
+        
 
     </ul>
 
@@ -818,23 +882,33 @@ https://github.com/trending
         
         
         
-        <a href="/zh/tags/go/"><span
-                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">Go&nbsp;&nbsp;1</span></a>
+        <a href="/zh/tags/git/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">git&nbsp;&nbsp;2</span></a>
         
         
         
-        <a href="/zh/tags/grpc/"><span
-                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">gRPC&nbsp;&nbsp;1</span></a>
+        <a href="/zh/tags/postgresql/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">postgresql&nbsp;&nbsp;2</span></a>
         
         
         
-        <a href="/zh/tags/ioc/"><span
-                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">IoC&nbsp;&nbsp;1</span></a>
+        <a href="/zh/tags/linux/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">linux&nbsp;&nbsp;2</span></a>
         
         
         
-        <a href="/zh/tags/redis/"><span
-                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">redis&nbsp;&nbsp;1</span></a>
+        <a href="/zh/tags/tool/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">tool&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/database/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">database&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/nodejs/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">nodejs&nbsp;&nbsp;1</span></a>
         
         
         
@@ -843,8 +917,53 @@ https://github.com/trending
         
         
         
+        <a href="/zh/tags/clickhouse/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">clickhouse&nbsp;&nbsp;1</span></a>
+        
+        
+        
         <a href="/zh/tags/development/"><span
                 class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">development&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/gis/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">gis&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/github/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">github&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/go/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">Go&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/ioc/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">IoC&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/centos/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">centOS&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/grpc/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">gRPC&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/http/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">http&nbsp;&nbsp;1</span></a>
+        
+        
+        
+        <a href="/zh/tags/redis/"><span
+                class="inline-block p-0 bg-gray-800 hover:bg-gray-900 border border-gray-800 text-gray-500 hover:text-gray-300 font-light mb-1 px-5 rounded-full hover:scale-105">redis&nbsp;&nbsp;1</span></a>
         
         
         
@@ -871,7 +990,7 @@ https://github.com/trending
         
         <li class="mb-1 border-b border-b-white/10 border-dashed">
             <a href="/zh/archives">2025年01月<span
-                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">4</span></a>
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">19</span></a>
         </li>
         
         
@@ -892,7 +1011,7 @@ https://github.com/trending
         
         <li class="mb-1 border-b border-b-white/10 border-dashed">
             <a href="/zh/archives">0001年01月<span
-                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">16</span></a>
+                    class="ml-2 px-2 bg-gray-800 rounded-full text-gray-500">1</span></a>
         </li>
         
         

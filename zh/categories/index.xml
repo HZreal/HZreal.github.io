@@ -8,6 +8,15 @@
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>database</title>
+      <link>https://hzreal.github.io/zh/categories/database/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>development</title>
       <link>https://hzreal.github.io/zh/categories/development/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
@@ -26,11 +35,47 @@
     </item>
     
     <item>
+      <title>operation</title>
+      <link>https://hzreal.github.io/zh/categories/operation/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/categories/operation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operations</title>
+      <link>https://hzreal.github.io/zh/categories/operations/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/categories/operations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>others</title>
+      <link>https://hzreal.github.io/zh/categories/others/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/categories/others/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tech</title>
       <link>https://hzreal.github.io/zh/categories/tech/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
       
       <guid>https://hzreal.github.io/zh/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>https://hzreal.github.io/zh/categories/tool/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/categories/tool/</guid>
       <description></description>
     </item>
     

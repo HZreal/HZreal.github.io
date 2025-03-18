@@ -8,11 +8,65 @@
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>centOS</title>
+      <link>https://hzreal.github.io/zh/tags/centos/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clickhouse</title>
+      <link>https://hzreal.github.io/zh/tags/clickhouse/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/clickhouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://hzreal.github.io/zh/tags/database/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>development</title>
       <link>https://hzreal.github.io/zh/tags/development/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
       
       <guid>https://hzreal.github.io/zh/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gis</title>
+      <link>https://hzreal.github.io/zh/tags/gis/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://hzreal.github.io/zh/tags/git/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://hzreal.github.io/zh/tags/github/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/github/</guid>
       <description></description>
     </item>
     
@@ -35,11 +89,56 @@
     </item>
     
     <item>
+      <title>http</title>
+      <link>https://hzreal.github.io/zh/tags/http/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://hzreal.github.io/zh/tags/linux/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://hzreal.github.io/zh/tags/nodejs/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgresql</title>
+      <link>https://hzreal.github.io/zh/tags/postgresql/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>redis</title>
       <link>https://hzreal.github.io/zh/tags/redis/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
       
       <guid>https://hzreal.github.io/zh/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>https://hzreal.github.io/zh/tags/tool/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tags/tool/</guid>
       <description></description>
     </item>
     

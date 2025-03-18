@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://hzreal.github.io/zh/categories/tool/</link>
+    <description>Recent content in tool on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/categories/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客建设网站之 hexo</title>
+      <link>https://hzreal.github.io/zh/tool/hexo/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tool/hexo/</guid>
+      <description>Hexo framework based on node.js
+官网： https://hexo.io
+doc：https://hexo.io/docs/
+简单教程： 【bilibii】 https://b23.tv/xyiGVIV
+安装 npm install -g hexo-cli 创建自己的blog项目 hexo init blog 博客文件存放路径 source/_posts，将自己平时的md文件放入其中即可
+设置主题 默认的主题比较单调，可官网查找合适主题安装
+doc： https://hexo.io/themes/
+主题存放路径 themes/
+使主题生效 修改_config.yml文件，设置theme为你的主题名称（下载在themes目录下的目录名，具体看主题使用说明）
+例如ayer主题的使用说明
+https://github.com/Shen-Yu/hexo-theme-ayer</description>
+    </item>
+    
+    <item>
+      <title>文档建设网站之 docify</title>
+      <link>https://hzreal.github.io/zh/tool/docsify/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tool/docsify/</guid>
+      <description>docsify https://docsify.js.org/#/
+安装
+npm i docsify-cli -g 搭建项目
+docsify init ./docs 启动
+docsify serve .\docs\ </description>
+    </item>
+    
+    <item>
+      <title>玩转 Github 搜索技巧</title>
+      <link>https://hzreal.github.io/zh/tech/github/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/github/</guid>
+      <description>Github github官方文档
+https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+操作技巧 按s 快速定位到搜索栏 按t 将项目目录树以列全部呈现 按. 将项目在在线vscode中查看 搜索技巧 搜索仓库https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+搜索指令如下 文档https://docs.github.com/cn/search-github
+in操作进行位置搜索 in:name 在标题中搜 如 golang in:name，表示标题中含有golang的 如python in:name in:description in:readme 组合使用： 逗号分开每个位置 如 vue in:name,description stars、fork stars:&amp;gt;=2000 fork:&amp;lt;5000 组合使用： 空格分开多个条件 高亮代码块进行共享 awesome 获取有关优秀项目、学习资料 awesome 内容 如awesome python 可获取大量关于python各个方面的资源 location、language location指定地区 language指定语言（常用）如language:c 高级搜索界面 UI界面搜索https://github.com/search/advanced Github API URL explore
+官方根据你的习惯推荐 链接https://github.com/explore topics
+不同的话题分类 https://github.com/topics 如数据库sql的，https://github.com/topics/sql 如go的，https://github.com/topics/go 如python的, https://github.com/topics/python 还有个很特殊的 awesome https://github.com/topics/awesome 提供优质资源 trending
+搜索相关优质项目，还可以指定今天，本周，本月
+https://github.com/trending
+如搜索go https://github.com/trending/go 如搜索python https://github.</description>
+    </item>
+    
+    <item>
+      <title>社区网站之 discuzQ</title>
+      <link>https://hzreal.github.io/zh/tool/discuzq/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tool/discuzq/</guid>
+      <description>discuz!Q 简介 快速搭建个人社区
+doc： https://discuz.com/
+api： https://developer.discuz.chat/#/api/get:_api_v3_check.user.get.redpacket
+安装 linux下，推荐docker安装 https://discuz.com/docs/Linux%20%E4%B8%BB%E6%9C%BA.html
+安装启动容器命令 docker run -d --restart=always -p 20080:80 -p 20443:443 -v ~/discuzQ/data/discuz:/var/lib/discuz -v ~/discuzQ/data/mysql-data:/var/lib/mysqldb -v ~/discuzQ/data/certs:/etc/nginx/certs ccr.ccs.tencentyun.com/discuzq/dzq:latest 初始化安装 Discuz! Q 访问 http://ip:port/install 并配置网站相关信息。
+配置mysql ip 用户名密码 配置后台用户名密码admin admin123456 使用 安装后，访问即可，一个社区就出现啦！可以注册咯
+http://ip:20080/
+https://ip:20443/
+后台站点访问，用户名admin密码admin123456
+http://ip:20080/admin
+https://ip:20443/admin/</description>
+    </item>
+    
+    <item>
+      <title>进程管理工具之 pm2</title>
+      <link>https://hzreal.github.io/zh/tech/pm2/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/pm2/</guid>
+      <description>PM2 参考：https://mp.weixin.qq.com/s/S8Gw2XzuflnN2QMSVXhLhg
+场景 node 应用跑的时候突然抛了个错，崩溃了，是不是需要重新跑起来？这时候是不是就需要另一个进程来自动做重启这件事情？ node 应用的日志默认输出在控制台，如果想输出到不同的日志文件，是不是可以让另一个进程获取 node 应用的输出，然后写文件来实现？ node 是单线程的，而机器是多个 cpu 的，为了充分利用 cpu 的能力，我们会用多个进程来跑 node 应用，来提高性能。这种通用逻辑是不是也可以放到一个单独进程里来实现？ node 运行时的 cpu、内存等资源的占用，是不是需要监控？这时候是不是可以让另一个进程来做？ 线上的 node 应用不只是跑起来就行了，还要做自动重启、日志、多进程、监控这些事情。
+简介 pm2 是 process manager，进程管理，它是第二个大版本，和前一个版本差异很大，所以叫 pm2.
+pm2 的主要功能就是进程管理、日志管理、负载均衡、性能监控这些。
+安装 npm install -g pm2 基本命令 pm2 start main.js pm2 start &amp;lt;pid&amp;gt;pm2 stop main.jspm2 logspm2 log &amp;lt;pid&amp;gt; PM2 start 参数 -i num 就是启动 num 个进程做负载均衡
+pm2 start app.js -i max 根据CPU核数启动进程的个数
+动态调整进程数 pm2 scale main 3 把集群调整为 3 个进程</description>
+    </item>
+    
+  </channel>
+</rss>

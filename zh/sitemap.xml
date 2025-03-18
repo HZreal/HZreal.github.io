@@ -28,10 +28,40 @@
                 href="https://hzreal.github.io/zh/categories/"
                 />
   </url><url>
+    <loc>https://hzreal.github.io/zh/tags/centos/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/centos7/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/clickhouse/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/clickhouse/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/database/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/categories/database/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
     <loc>https://hzreal.github.io/zh/tags/development/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
     <loc>https://hzreal.github.io/zh/categories/development/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/gis/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/gis/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/git/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/github/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
     <loc>https://hzreal.github.io/zh/tags/go/</loc>
@@ -52,8 +82,48 @@
     <loc>https://hzreal.github.io/zh/tech/grpc-%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
+    <loc>https://hzreal.github.io/zh/tags/http/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/http/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/linux/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/nodejs/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/categories/operation/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/categories/operations/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/categories/others/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/postgis/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tags/postgresql/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
     <loc>https://hzreal.github.io/zh/tags/redis/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://hzreal.github.io/en/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
+                />
   </url><url>
     <loc>https://hzreal.github.io/zh/tags/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
@@ -84,16 +154,49 @@
                 href="https://hzreal.github.io/zh/tech/"
                 />
   </url><url>
+    <loc>https://hzreal.github.io/zh/tags/tool/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/categories/tool/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
     <loc>https://hzreal.github.io/zh/tool/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
     <loc>https://hzreal.github.io/zh/tags/wire/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
+    <loc>https://hzreal.github.io/zh/tool/hexo/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tool/git-commits-specification/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
     <loc>https://hzreal.github.io/zh/tech/cache/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
+    <loc>https://hzreal.github.io/zh/tech/pm2/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
     <loc>https://hzreal.github.io/zh/tool/environment/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tool/discuzq/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/postgresql/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tech/github/</loc>
+    <lastmod>2025-01-08T09:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://hzreal.github.io/zh/tool/docsify/</loc>
     <lastmod>2025-01-08T09:32:11+08:00</lastmod>
   </url><url>
     <loc>https://hzreal.github.io/zh/search/</loc>
@@ -141,46 +244,6 @@
                 href="https://hzreal.github.io/zh/archives/"
                 />
   </url><url>
-    <loc>https://hzreal.github.io/zh/tech/centos7/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/clickhouse/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/gis/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/github/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/http/</loc>
-  </url><url>
     <loc>https://hzreal.github.io/zh/tech/notebook/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/pm2/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/postgis/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/postgresql/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://hzreal.github.io/en/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/"
-                />
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tool/discuzq/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tool/docsify/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tool/git-commits-specification/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
-  </url><url>
-    <loc>https://hzreal.github.io/zh/tool/hexo/</loc>
   </url>
 </urlset>

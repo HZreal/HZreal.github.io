@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>operation on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://hzreal.github.io/zh/categories/operation/</link>
+    <description>Recent content in operation on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/categories/operation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ubuntu 上安装部分开发软件</title>
+      <link>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/ubuntu20.04%E8%BD%AF%E4%BB%B6/</guid>
+      <description>ubuntu20.04安装部分软件 安装docker 1、卸载可能存在的或者为安装成功的Docker版本 sudo apt-``get` `remove docker docker-engine docker-ce docker.io 2、添加阿里云的GPG密钥 curl -fsSL http:``//mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add - 3、使用以下命令设置存储库 sudo add-apt-repository ``&amp;#34;deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable&amp;#34; 4、安装最新版本的Docker sudo apt-``get` `update sudo apt-``get` `install docker-ce docker-ce-cli containerd.io docker-compose-plugin 5、验证Docker是否安装成功 -- 查看docker 版本docker version 二、安装postgresql 1、Add Postgre SQL 13 repository sudo apt updatesudo apt install curl gpg gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates add the APT repository，importing GPG key curl -fsSL https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

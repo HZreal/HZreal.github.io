@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>operations on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://hzreal.github.io/zh/categories/operations/</link>
+    <description>Recent content in operations on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/categories/operations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS7  相关命令</title>
+      <link>https://hzreal.github.io/zh/tech/centos7/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/centos7/</guid>
+      <description>centOS7 安装yum 查看端口 netstat -anp |grep 80
+安装wget yum install wget
+systemctl的所有service配置文件目录为/usr/lib/systemd/system
+watch 命令监听 watch -d -n 2 监听执行某个命令，每2秒刷新一次
+top 命令实时查看CPU内存
+// 查看内存，每2秒刷新一次 free -m -s 2</description>
+    </item>
+    
+  </channel>
+</rss>

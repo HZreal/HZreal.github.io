@@ -29,6 +29,53 @@
     </item>
     
     <item>
+      <title>Http 之 jsonp</title>
+      <link>https://hzreal.github.io/zh/tech/http/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/http/</guid>
+      <description>Http jsonp 概念：浏览器通过script标签中src属性向服务端发送执行函数的名字，服务端根据函数名、服务端数据，拼接成一个函数调用的字符串给客户端script标签执行，这称之为JSONP
+特点：
+不属于axios请求，因为没有使用XMLHttpRequest对象 仅支持get请求，不支持post、put、delete </description>
+    </item>
+    
+    <item>
+      <title>ssh 连接过程</title>
+      <link>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/ssh-%E7%99%BB%E5%85%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/</guid>
+      <description>用户密码方式验证登入过程分析 客户端ssh向服务器发送连接请求，传递用户名及ip端口 服务端接收到请求，检查用户名是否存在，不存在则拒绝。反之，会将公钥及指纹（公钥对应的sha256值）发送给客户端 若客户端是第一次请求连接，则会提醒用户确认该指纹是否来自目的服务器，若用户输入yes确认则会将指纹存放到known_host中，下次再连接时，当发现服务器传过来的指纹与已存入到known_host中的指纹一致，则服务器身份直接验证通过，无需提醒确认。反之会发出警告：提醒说该公钥和指纹可能是由于中间人拦截而被篡改的或者可能是服务器更新了新的公私钥对。 客户端完成公钥接收及指纹对比后，需要输入密码，将密码使用服务器公钥进行加密发送到服务器，服务器私钥解密验证成功则允许登入。 公钥身份验证登入过程分析 客户端在本地生成一对密钥，包括一个公钥和一个私钥。且将自己的公钥放到到服务器上的 ~/.ssh/authorized_keys 文件中 客户端ssh向服务器发送连接请求 服务端检查用户名存在后，生成一个随机串返给客户端 客户端自己的私钥对随机串进行签名并发送给服务器 服务器使用已存入authorized_keys 中的公钥进行验签，若验签通过则客户端身份认证成功 </description>
+    </item>
+    
+    <item>
+      <title>代码提交规范之 Conventional Commits</title>
+      <link>https://hzreal.github.io/zh/tool/git-commits-specification/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tool/git-commits-specification/</guid>
+      <description>Conventional Commits：让您的Git历史更加清晰和有意义 引言 在软件开发中，良好的版本控制实践是维持项目健康和可持续发展的关键。一个清晰、一致的提交历史不仅可以加强团队合作，还能提高代码的可维护性。本文将介绍 Conventional Commits 规范，一种帮助您实现这一目标的提交信息格式规范。
+什么是 Conventional Commits？ Conventional Commits 是一个轻量级的、社区驱动的提交信息格式规范。它的核心目的是使提交信息更加可读和易于理解。遵循这一规范，可以让您的 Git 历史成为一个清晰的故事，而不仅仅是代码的变更记录。
+核心要点 清晰的类型定义：规定了一系列预定义的提交类型，如 feat, fix, docs, 等，每种类型对应不同的代码更改目的。 可选的范围：允许在提交类型后指定影响范围，增加了额外的上下文信息。 描述性的消息：鼓励编写简短且具有描述性的信息，概括提交的主要内容。 如何使用 Conventional Commits？ 使用 Conventional Commits 的基本格式如下：
+markdownCopy code&amp;lt;type&amp;gt;[optional scope]: &amp;lt;description&amp;gt;[optional body][optional footer] 提交类型（Types） feat：新功能 fix：修复 Bug docs：文档更新 style：代码样式调整（不影响代码运行） refactor：代码重构 perf：性能提升 test：测试相关 chore：日常琐事（如依赖管理） 示例 gitCopy codefeat(auth): 添加 JWT 认证支持- 实现 JWT 生成和验证- 更新认证中间件以支持 JWT关闭问题 #123 在这个示例中，feat 表明这是一个添加新功能的提交，auth 是这次更改的范围，后面紧跟着的是对提交内容的简短描述。接着是一个更详细的解释，最后是相关问题链接。
+Conventional Commits 的好处 提高可读性：清晰的提交历史使新团队成员更容易理解项目进展。 自动化工具友好：可以被用于自动化生成变更日志和版本控制。 改善协作流程：明确的提交类型和格式有助于代码审查和团队协作。 结语 Conventional Commits 规范为软件开发提供了一种简单而高效的提交历史管理方法。它的简洁性和自解释性使得项目维护变得更加容易。采纳这一规范，将为您的项目带来长期的好处。</description>
+    </item>
+    
+    <item>
+      <title>代码提交规范之 Conventional Commits</title>
+      <link>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tool/git%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</guid>
+      <description>引言 在软件开发中，良好的版本控制实践是维持项目健康和可持续发展的关键。一个清晰、一致的提交历史不仅可以加强团队合作，还能提高代码的可维护性。本文将介绍 Conventional Commits 规范，一种帮助您实现这一目标的提交信息格式规范。
+什么是 Conventional Commits？ Conventional Commits 是一个轻量级的、社区驱动的提交信息格式规范。它的核心目的是使提交信息更加可读和易于理解。遵循这一规范，可以让您的 Git 历史成为一个清晰的故事，而不仅仅是代码的变更记录。
+可参考链接：https://www.conventionalcommits.org
+核心要点 清晰的类型定义：规定了一系列预定义的提交类型，如 feat, fix, docs, 等，每种类型对应不同的代码更改目的。 可选的范围：允许在提交类型后指定影响范围，增加了额外的上下文信息。 描述性的消息：鼓励编写简短且具有描述性的信息，概括提交的主要内容。 如何使用 Conventional Commits？ 使用 Conventional Commits 的提交注释基本格式如下：
+&amp;lt;type&amp;gt;(&amp;lt;scope&amp;gt;): &amp;lt;description&amp;gt;&amp;lt;body&amp;gt;&amp;lt;footer&amp;gt; 格式描述如下：
+&amp;lt;type&amp;gt;：提交类型，用于说明本次提交的类别，常见类型包括： feat：新功能 fix：修复 Bug docs：文档更新 style：代码风格样式调整（不影响代码运行） refactor：代码重构 perf：性能提升（performance的缩写） test：测试相关 chore：其他无关紧要的改动（单词是琐事的意思） (&amp;lt;scope&amp;gt;)：可选，用于进一步细化提交类型，例如 feat(login) 表示登录功能的新功能。 &amp;lt;subject&amp;gt;：简短描述本次提交的主要内容，建议不超过 50 个字符。 &amp;lt;body&amp;gt;：可选，提供更详细的提交描述，可以包含以下内容： 修改原因 修改内容 影响范围 相关测试 &amp;lt;footer&amp;gt;：可选，包含额外的元信息，例如： 关联的 Jira 问题编号 提交者 评审者 示例 feat(auth): 添加 JWT 认证支持- 实现 JWT 生成和验证- 更新认证中间件以支持 JWT关闭问题 #123 在这个示例中， feat 表明这是一个添加新功能的提交，auth 是这次更改的范围，后面紧跟着的description是对提交内容的简短描述。 接着body是一个更详细的解释。 最后footer是相关问题的结果。</description>
+    </item>
+    
+    <item>
       <title>缓存简介</title>
       <link>https://hzreal.github.io/zh/tech/cache/</link>
       <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>

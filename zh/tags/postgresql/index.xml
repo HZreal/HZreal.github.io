@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postgresql on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://hzreal.github.io/zh/tags/postgresql/</link>
+    <description>Recent content in postgresql on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pg 之空间数据 postgis 插件</title>
+      <link>https://hzreal.github.io/zh/tech/postgis/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/postgis/</guid>
+      <description>postgis 安装扩展 先查找最新postgis插件版本号
+sudo apt-cache search postgis 找到当前已安装postgreSQL版本对应的postgis版本
+ps:查看postgreSQL版本 select version()
+sudo apt-get install postgresql-14-postgis-3 赋予某个库空间数据库的能力
+CREATE EXTENSION postgis; postgis_topology支持拓扑
+CREATE EXTENSION postgis_topology; pgrouting 提供了对路网的分析支持，包括双向Dijkstra最短路径等10多种功能，是postgis的插件，需要额外安装</description>
+    </item>
+    
+    <item>
+      <title>数据库之 postgresql</title>
+      <link>https://hzreal.github.io/zh/tech/postgresql/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/postgresql/</guid>
+      <description>postgreSQL 安装搭建 https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/
+指定版本安装
+sudo apt-get install postgresql-13 配置 路径 ubuntu下：
+/etc/postgresql//main
+centOS下：
+/var/lib/pgsql/13/data/postgresql.conf postgres.conf pg数据库配置文件
+包含设置data/hba/indet等目录，IP/port，最大连接数，认证，ssl，内存，磁盘等等
+pg_hba.conf 客户端认证配置文件即host-based authentication：基于主机的认证
+多种连接pg数据库的方式
+pg_ident.conf 用户名称映射，可添加映射用户
+用户名密码 设置可远程访问 启动关闭 systemctl start systemctl stop 访问 切换用户
+sudo -i -u postgres 登入
+psql -h 192.168.1.7 -p 5432 -U postgres -d testdb -W 密码 基本操作 数据库操作 1、列举数据库：\l 2、选择数据库：\c 数据库名 3、查看该某个库中的所有表：\dt 4、切换数据库：\c db_name 5、查看某个库中的某个表结构：\d 表名 6、查看某个库中某个表的记录：select * from apps limit 1; 7、显示字符集：\encoding 8、退出psgl：\q
+表、库操作 查询 基本CURD insert update set delete from 条件查询 and or not in not in between and like group having order by 聚合 关联查询 inner join / join left join right join full outer join 全外连接 cross join 交叉连接 （笛卡尔积） Union查询 union</description>
+    </item>
+    
+  </channel>
+</rss>

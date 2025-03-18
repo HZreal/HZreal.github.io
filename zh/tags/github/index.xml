@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on {码途轨迹} - 发现问题，分享解决.</title>
+    <link>https://hzreal.github.io/zh/tags/github/</link>
+    <description>Recent content in github on {码途轨迹} - 发现问题，分享解决.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Jan 2025 09:32:11 +0800</lastBuildDate><atom:link href="https://hzreal.github.io/zh/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>玩转 Github 搜索技巧</title>
+      <link>https://hzreal.github.io/zh/tech/github/</link>
+      <pubDate>Wed, 08 Jan 2025 09:32:11 +0800</pubDate>
+      
+      <guid>https://hzreal.github.io/zh/tech/github/</guid>
+      <description>Github github官方文档
+https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+操作技巧 按s 快速定位到搜索栏 按t 将项目目录树以列全部呈现 按. 将项目在在线vscode中查看 搜索技巧 搜索仓库https://docs.github.com/cn/search-github/searching-on-github/searching-for-repositories
+搜索指令如下 文档https://docs.github.com/cn/search-github
+in操作进行位置搜索 in:name 在标题中搜 如 golang in:name，表示标题中含有golang的 如python in:name in:description in:readme 组合使用： 逗号分开每个位置 如 vue in:name,description stars、fork stars:&amp;gt;=2000 fork:&amp;lt;5000 组合使用： 空格分开多个条件 高亮代码块进行共享 awesome 获取有关优秀项目、学习资料 awesome 内容 如awesome python 可获取大量关于python各个方面的资源 location、language location指定地区 language指定语言（常用）如language:c 高级搜索界面 UI界面搜索https://github.com/search/advanced Github API URL explore
+官方根据你的习惯推荐 链接https://github.com/explore topics
+不同的话题分类 https://github.com/topics 如数据库sql的，https://github.com/topics/sql 如go的，https://github.com/topics/go 如python的, https://github.com/topics/python 还有个很特殊的 awesome https://github.com/topics/awesome 提供优质资源 trending
+搜索相关优质项目，还可以指定今天，本周，本月
+https://github.com/trending
+如搜索go https://github.com/trending/go 如搜索python https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
